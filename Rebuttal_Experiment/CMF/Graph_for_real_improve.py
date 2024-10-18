@@ -31,7 +31,6 @@ add_dic = {'VibratePlate': 0, 'HeatedBlock': 0}
 max_dic = {'non_linear_sin':0.033, 'forrester': 48.09,'Branin': 55,'Currin': 14,'Park': 2.2, 'VibratePlate': 250, 'HeatedBlock': 2}
 lim_x = {'VibratePlate': [48, 150], 'HeatedBlock': [48, 150]}
 lim_y = {'VibratePlate': [28, 41.8], 'HeatedBlock': [0,1.44]}
-seed_dic = {'VibratePlate': [0,1,2,3,4,5,7,8,9], 'HeatedBlock': [0,1,6,9]}
 
 cmf_methods_name_list = ['GP_UCB', 
                         #  'GP_cfKG', 
@@ -53,7 +52,7 @@ for kk in range(2):
         cost_collection = []
         inter_collection = []
 
-        for seed in seed_dic[data_name]:
+        for seed in range(5):
             path = os.path.join(sys.path[-1], 'Rebuttal_Experiment', 'CMF', 'Exp_results',Exp_marker,
                                 data_name, cost_name, methods_name + '_seed_' + str(seed) + '.csv')
             data = pd.DataFrame(pd.read_csv(path))

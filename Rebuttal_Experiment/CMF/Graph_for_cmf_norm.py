@@ -81,7 +81,7 @@ for methods_name in methods_name_list:
     print(methods_name)
     cost_collection = []
     inter_collection = []
-    for seed in [1,2,7,12,17]:
+    for seed in range(5):
         path = os.path.join(sys.path[-1], 'Rebuttal_Experiment', 'CMF', 'Exp_results',Exp_marker,
                             data_name, cost_name, f'{methods_name}_seed_{seed}.csv')
         data = pd.read_csv(path)

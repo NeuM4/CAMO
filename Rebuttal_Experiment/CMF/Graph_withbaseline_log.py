@@ -67,7 +67,7 @@ for methods_name in methods_name_list:
     print(methods_name)
     cost_collection = []
     inter_collection = []
-    for seed in [2,3,4,5,6,7,8]:
+    for seed in range(5):
         path = os.path.join(sys.path[-1], 'Rebuttal_Experiment', 'CMF', 'Exp_results',Exp_marker,
                             data_name, cost_name, f'{methods_name}_seed_{seed}.csv')
         data = pd.read_csv(path)
@@ -98,7 +98,7 @@ for methods_name in baseline_list:
     print(methods_name)
     cost_collection = []
     inter_collection = []
-    for seed in [2,3,4,5,6,7,8]:
+    for seed in range(5):
         path = os.path.join(sys.path[-1], 'Rebuttal_Experiment', 'CMF', 'Exp_results',Exp_marker,
                             data_name, cost_name, f'{methods_name}_seed_{seed}.csv')
         data = pd.read_csv(path)
@@ -128,7 +128,7 @@ for methods_name in baseline_list:
 for methods_name in ['smac']:
     cost_collection = []
     inter_collection = []
-    for seed in [0,1,2,3,4]:
+    for seed in range(5):
         path = os.path.join(sys.path[-1], 'Rebuttal_Experiment', 'CMF', 'Exp_results',Exp_marker,
                             data_name, cost_name, f'{methods_name}_seed_{seed}.csv')
         data = pd.read_csv(path)

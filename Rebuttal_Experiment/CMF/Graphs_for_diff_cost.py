@@ -49,21 +49,16 @@ cost_lim_x = {'Branin': [13, 150], 'Currin': [13, 150], 'Park': [13, 150],'bohac
 
 ##Branin
 # data_name = 'Branin'
-# seed_dic ={'pow_10':[2,4,5,7,8],'linear':[4,5,7,8],'log':[2,3,5,7,8]}
 ##Currin
 # data_name = 'Currin'
-# seed_dic ={'pow_10':[2,3,4,5,6,7,8,9],'linear':[0,2,3,4,5,6,7,8],'log':[0,2,3,4,5,7,8,9]}
 ##Park
 # data_name = 'Park'
-# seed_dic ={'pow_10':[0,2,4,5,7],'linear':[0,4,7,9],'log':[0,1,2,3,4,7]}
 
 ##bohachevsky
 data_name = 'bohachevsky'
-seed_dic ={'pow_10':[1,17,19,21,22],'linear':[1,17,19,21,22],'log':[1,17,19,21,22]}
 
 ##
 # data_name = 'borehole'
-# seed_dic ={'pow_10':[0,1,2,6],'linear':[0,1,2,6],'log':[0,1,2,6]}
 
 methods_name_list = [ 
                      'GP_UCB', 
@@ -90,7 +85,7 @@ for kk in range(3):
         cost_collection = []
         # SR_collection = []
         inter_collection = []
-        for seed in seed_dic[cost_name]:
+        for seed in range(5):
             path = os.path.join(sys.path[-1], 'Rebuttal_Experiment', 'CMF', 'Exp_results',Exp_marker,
                                 data_name, cost_name, methods_name + '_seed_' + str(seed) + '.csv')
             data = pd.DataFrame(pd.read_csv(path))

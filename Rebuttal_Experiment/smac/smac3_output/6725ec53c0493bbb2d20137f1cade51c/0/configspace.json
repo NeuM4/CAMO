@@ -1,0 +1,27 @@
+{
+  "name": null,
+  "hyperparameters": [
+    {
+      "type": "uniform_float",
+      "name": "s",
+      "lower": 0.0,
+      "upper": 1.0,
+      "default_value": 0.5,
+      "log": false,
+      "meta": null
+    },
+    {
+      "type": "uniform_float",
+      "name": "x1",
+      "lower": 0.0,
+      "upper": 1.5,
+      "default_value": 0.75,
+      "log": false,
+      "meta": null
+    }
+  ],
+  "conditions": [],
+  "forbiddens": [],
+  "python_module_version": "1.1.0",
+  "format_version": 0.4
+}

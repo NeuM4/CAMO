@@ -1,0 +1,20 @@
+from Data_simulation.Synthetic_MF_Function.Non_linear_sin import non_linear_sin
+from Data_simulation.Synthetic_MF_Function.Forrester import forrester
+# from Data_simulation.Synthetic_MF_Function.Branin import Branin
+# from Data_simulation.Synthetic_MF_Function.Branin_DMF import Branin_DMF
+# from Data_simulation.Synthetic_MF_Function.Hartmann import Hartmann
+from Data_simulation.Synthetic_MF_Function.tl2 import tl2
+from Data_simulation.Synthetic_MF_Function.tl3 import tl3
+from Data_simulation.Synthetic_MF_Function.maolin1 import maolin1
+from Data_simulation.Synthetic_MF_Function.test3 import test3
+from Data_simulation.Synthetic_MF_Function.test4 import test4
+from Data_simulation.Synthetic_MF_Function.Branin_new import Branin
+from Data_simulation.Synthetic_MF_Function.Park import Park
+from Data_simulation.Synthetic_MF_Function.Currin import Currin
+from Data_simulation.Synthetic_MF_Function.borehole import borehole
+from Data_simulation.Synthetic_MF_Function.booth import booth
+from Data_simulation.Synthetic_MF_Function.hartmann import hartmann
+from Data_simulation.Synthetic_MF_Function.bohachevsky import bohachevsky
+from Data_simulation.Synthetic_MF_Function.himmelblau import himmelblau
+from Data_simulation.Synthetic_MF_Function.six_hump_camelback import six_hump_camelback
+from Data_simulation.Synthetic_MF_Function.Colvile import colvile

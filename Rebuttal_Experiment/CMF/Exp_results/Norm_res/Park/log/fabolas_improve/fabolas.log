@@ -1,0 +1,945 @@
+2024-08-01 11:42:30,698 - INFO - Start iteration 0 ... 
+2024-08-01 11:42:33,958 - INFO - Current incumbent [-0.16118336  0.1058141   1.        ] with estimated performance 1.018787
+2024-08-01 11:43:10,695 - INFO - Optimization overhead was 39.996801 seconds
+2024-08-01 11:43:10,695 - INFO - Evaluate candidate [ 0.59435075 -0.80479974] on subset size 5.000000
+2024-08-01 11:43:10,696 - INFO - Configuration achieved a performance of 0.643002 with cost 5.000000
+2024-08-01 11:43:10,696 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 11:43:10,697 - INFO - Start iteration 1 ... 
+2024-08-01 11:43:12,394 - INFO - Current incumbent [-0.16118336  0.1058141   1.        ] with estimated performance 1.018695
+2024-08-01 11:43:50,973 - INFO - Optimization overhead was 40.275786 seconds
+2024-08-01 11:43:50,973 - INFO - Evaluate candidate [ 0.48136343 -0.78804339] on subset size 5.000000
+2024-08-01 11:43:50,974 - INFO - Configuration achieved a performance of 0.516113 with cost 5.000000
+2024-08-01 11:43:50,974 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:43:50,975 - INFO - Start iteration 2 ... 
+2024-08-01 11:43:52,692 - INFO - Current incumbent [-0.16118336  0.1058141   1.        ] with estimated performance 1.018914
+2024-08-01 11:44:26,267 - INFO - Optimization overhead was 35.292764 seconds
+2024-08-01 11:44:26,267 - INFO - Evaluate candidate [ 0.51554073 -0.24908383] on subset size 5.000000
+2024-08-01 11:44:26,268 - INFO - Configuration achieved a performance of 0.507998 with cost 5.000000
+2024-08-01 11:44:26,268 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 11:44:26,269 - INFO - Start iteration 3 ... 
+2024-08-01 11:44:27,788 - INFO - Current incumbent [-0.16118336  0.1058141   1.        ] with estimated performance 1.019419
+2024-08-01 11:45:00,618 - INFO - Optimization overhead was 34.348281 seconds
+2024-08-01 11:45:00,618 - INFO - Evaluate candidate [ 0.21670881 -0.30966103] on subset size 5.000000
+2024-08-01 11:45:00,618 - INFO - Configuration achieved a performance of 0.257347 with cost 5.000000
+2024-08-01 11:45:00,618 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:45:00,619 - INFO - Start iteration 4 ... 
+2024-08-01 11:45:02,269 - INFO - Current incumbent [-0.16118336  0.1058141   1.        ] with estimated performance 1.019274
+2024-08-01 11:45:37,065 - INFO - Optimization overhead was 36.446352 seconds
+2024-08-01 11:45:37,065 - INFO - Evaluate candidate [0.17387039 0.1173024 ] on subset size 5.000000
+2024-08-01 11:45:37,065 - INFO - Configuration achieved a performance of 0.395894 with cost 5.000000
+2024-08-01 11:45:37,065 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:45:37,066 - INFO - Start iteration 5 ... 
+2024-08-01 11:45:38,688 - INFO - Current incumbent [0.17387039 0.1173024  1.        ] with estimated performance 1.010117
+2024-08-01 11:46:11,728 - INFO - Optimization overhead was 34.660886 seconds
+2024-08-01 11:46:11,729 - INFO - Evaluate candidate [ 0.28414911 -0.0821427 ] on subset size 4.000000
+2024-08-01 11:46:11,729 - INFO - Configuration achieved a performance of 0.343873 with cost 5.000000
+2024-08-01 11:46:11,729 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:46:11,730 - INFO - Start iteration 6 ... 
+2024-08-01 11:46:13,308 - INFO - Current incumbent [0.17387039 0.1173024  1.        ] with estimated performance 1.011923
+2024-08-01 11:46:42,697 - INFO - Optimization overhead was 30.967503 seconds
+2024-08-01 11:46:42,697 - INFO - Evaluate candidate [ 0.27679719 -0.23784757] on subset size 4.000000
+2024-08-01 11:46:42,697 - INFO - Configuration achieved a performance of 0.299037 with cost 5.000000
+2024-08-01 11:46:42,697 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:46:42,699 - INFO - Start iteration 7 ... 
+2024-08-01 11:46:44,357 - INFO - Current incumbent [0.17387039 0.1173024  1.        ] with estimated performance 1.010328
+2024-08-01 11:47:13,739 - INFO - Optimization overhead was 31.039359 seconds
+2024-08-01 11:47:13,739 - INFO - Evaluate candidate [0.0434498  0.23344222] on subset size 5.000000
+2024-08-01 11:47:13,740 - INFO - Configuration achieved a performance of 0.399390 with cost 5.000000
+2024-08-01 11:47:13,740 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 11:47:13,741 - INFO - Start iteration 8 ... 
+2024-08-01 11:47:15,389 - INFO - Current incumbent [0.17387039 0.1173024  1.        ] with estimated performance 1.016838
+2024-08-01 11:47:44,918 - INFO - Optimization overhead was 31.176823 seconds
+2024-08-01 11:47:44,919 - INFO - Evaluate candidate [ 0.45466094 -0.61388488] on subset size 4.000000
+2024-08-01 11:47:44,919 - INFO - Configuration achieved a performance of 0.428869 with cost 5.000000
+2024-08-01 11:47:44,919 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:47:44,921 - INFO - Start iteration 9 ... 
+2024-08-01 11:47:46,580 - INFO - Current incumbent [0.17387039 0.1173024  1.        ] with estimated performance 1.016369
+2024-08-01 11:48:14,775 - INFO - Optimization overhead was 29.854785 seconds
+2024-08-01 11:48:14,775 - INFO - Evaluate candidate [ 0.30871679 -0.25331084] on subset size 5.000000
+2024-08-01 11:48:14,776 - INFO - Configuration achieved a performance of 0.336870 with cost 5.000000
+2024-08-01 11:48:14,776 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 11:48:14,777 - INFO - Start iteration 10 ... 
+2024-08-01 11:48:16,384 - INFO - Current incumbent [0.17387039 0.1173024  1.        ] with estimated performance 1.015062
+2024-08-01 11:48:45,555 - INFO - Optimization overhead was 30.777603 seconds
+2024-08-01 11:48:45,556 - INFO - Evaluate candidate [ 0.22651582 -0.0351429 ] on subset size 5.000000
+2024-08-01 11:48:45,556 - INFO - Configuration achieved a performance of 0.344853 with cost 5.000000
+2024-08-01 11:48:45,556 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:48:45,557 - INFO - Start iteration 11 ... 
+2024-08-01 11:48:47,178 - INFO - Current incumbent [ 0.22651582 -0.0351429   1.        ] with estimated performance 1.012940
+2024-08-01 11:49:15,528 - INFO - Optimization overhead was 29.971128 seconds
+2024-08-01 11:49:15,529 - INFO - Evaluate candidate [ 0.05726548 -0.14126687] on subset size 5.000000
+2024-08-01 11:49:15,529 - INFO - Configuration achieved a performance of 0.192453 with cost 5.000000
+2024-08-01 11:49:15,529 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:49:15,530 - INFO - Start iteration 12 ... 
+2024-08-01 11:49:17,126 - INFO - Current incumbent [ 0.05726548 -0.14126687  1.        ] with estimated performance 1.004183
+2024-08-01 11:49:49,523 - INFO - Optimization overhead was 33.992057 seconds
+2024-08-01 11:49:49,523 - INFO - Evaluate candidate [ 0.06386536 -0.13850361] on subset size 4.000000
+2024-08-01 11:49:49,524 - INFO - Configuration achieved a performance of 0.192983 with cost 5.000000
+2024-08-01 11:49:49,524 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 11:49:49,525 - INFO - Start iteration 13 ... 
+2024-08-01 11:49:51,415 - INFO - Current incumbent [ 0.05726548 -0.14126687  1.        ] with estimated performance 1.005471
+2024-08-01 11:50:22,306 - INFO - Optimization overhead was 32.781116 seconds
+2024-08-01 11:50:22,306 - INFO - Evaluate candidate [0.03904419 0.03022588] on subset size 5.000000
+2024-08-01 11:50:22,307 - INFO - Configuration achieved a performance of 0.279267 with cost 5.000000
+2024-08-01 11:50:22,307 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:50:22,308 - INFO - Start iteration 14 ... 
+2024-08-01 11:50:24,101 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.996793
+2024-08-01 11:50:53,981 - INFO - Optimization overhead was 31.671457 seconds
+2024-08-01 11:50:53,981 - INFO - Evaluate candidate [ 0.0681096  -0.05087285] on subset size 5.000000
+2024-08-01 11:50:53,982 - INFO - Configuration achieved a performance of 0.244765 with cost 5.000000
+2024-08-01 11:50:53,982 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 11:50:53,983 - INFO - Start iteration 15 ... 
+2024-08-01 11:50:55,624 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000719
+2024-08-01 11:51:24,151 - INFO - Optimization overhead was 30.167216 seconds
+2024-08-01 11:51:24,151 - INFO - Evaluate candidate [ 0.00164774 -0.06311949] on subset size 5.000000
+2024-08-01 11:51:24,152 - INFO - Configuration achieved a performance of 0.205918 with cost 5.000000
+2024-08-01 11:51:24,152 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 11:51:24,153 - INFO - Start iteration 16 ... 
+2024-08-01 11:51:25,820 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000470
+2024-08-01 11:51:54,270 - INFO - Optimization overhead was 30.116624 seconds
+2024-08-01 11:51:54,270 - INFO - Evaluate candidate [0.25561109 0.17054326] on subset size 5.000000
+2024-08-01 11:51:54,270 - INFO - Configuration achieved a performance of 0.484365 with cost 5.000000
+2024-08-01 11:51:54,270 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:51:54,272 - INFO - Start iteration 17 ... 
+2024-08-01 11:51:55,981 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999851
+2024-08-01 11:52:24,704 - INFO - Optimization overhead was 30.432733 seconds
+2024-08-01 11:52:24,704 - INFO - Evaluate candidate [ 0.19920148 -0.21006841] on subset size 4.000000
+2024-08-01 11:52:24,704 - INFO - Configuration achieved a performance of 0.226583 with cost 5.000000
+2024-08-01 11:52:24,704 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:52:24,706 - INFO - Start iteration 18 ... 
+2024-08-01 11:52:26,407 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999460
+2024-08-01 11:53:01,240 - INFO - Optimization overhead was 36.534008 seconds
+2024-08-01 11:53:01,241 - INFO - Evaluate candidate [ 0.06960964 -0.34538014] on subset size 4.000000
+2024-08-01 11:53:01,241 - INFO - Configuration achieved a performance of 0.143216 with cost 5.000000
+2024-08-01 11:53:01,241 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:53:01,243 - INFO - Start iteration 19 ... 
+2024-08-01 11:53:02,969 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000283
+2024-08-01 11:53:37,964 - INFO - Optimization overhead was 36.720245 seconds
+2024-08-01 11:53:37,965 - INFO - Evaluate candidate [ 0.22698449 -0.4887746 ] on subset size 4.000000
+2024-08-01 11:53:37,965 - INFO - Configuration achieved a performance of 0.226763 with cost 5.000000
+2024-08-01 11:53:37,965 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:53:37,967 - INFO - Start iteration 20 ... 
+2024-08-01 11:53:39,665 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000707
+2024-08-01 11:54:14,833 - INFO - Optimization overhead was 36.866269 seconds
+2024-08-01 11:54:14,834 - INFO - Evaluate candidate [ 0.23640652 -0.36839895] on subset size 4.000000
+2024-08-01 11:54:14,834 - INFO - Configuration achieved a performance of 0.240472 with cost 5.000000
+2024-08-01 11:54:14,834 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:54:14,836 - INFO - Start iteration 21 ... 
+2024-08-01 11:54:16,555 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000722
+2024-08-01 11:54:51,899 - INFO - Optimization overhead was 37.063565 seconds
+2024-08-01 11:54:51,899 - INFO - Evaluate candidate [ 0.33072298 -0.53165257] on subset size 4.000000
+2024-08-01 11:54:51,900 - INFO - Configuration achieved a performance of 0.284372 with cost 5.000000
+2024-08-01 11:54:51,900 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 11:54:51,901 - INFO - Start iteration 22 ... 
+2024-08-01 11:54:53,680 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999916
+2024-08-01 11:55:29,363 - INFO - Optimization overhead was 37.461321 seconds
+2024-08-01 11:55:29,364 - INFO - Evaluate candidate [ 0.16335628 -0.24746196] on subset size 4.000000
+2024-08-01 11:55:29,364 - INFO - Configuration achieved a performance of 0.194847 with cost 5.000000
+2024-08-01 11:55:29,364 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:55:29,366 - INFO - Start iteration 23 ... 
+2024-08-01 11:55:31,135 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000699
+2024-08-01 11:56:06,526 - INFO - Optimization overhead was 37.160127 seconds
+2024-08-01 11:56:06,527 - INFO - Evaluate candidate [ 0.04731054 -0.04372204] on subset size 4.000000
+2024-08-01 11:56:06,527 - INFO - Configuration achieved a performance of 0.208150 with cost 5.000000
+2024-08-01 11:56:06,527 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:56:06,529 - INFO - Start iteration 24 ... 
+2024-08-01 11:56:08,294 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000843
+2024-08-01 11:56:43,876 - INFO - Optimization overhead was 37.347340 seconds
+2024-08-01 11:56:43,876 - INFO - Evaluate candidate [ 0.55176846 -0.53198704] on subset size 4.000000
+2024-08-01 11:56:43,877 - INFO - Configuration achieved a performance of 0.463883 with cost 5.000000
+2024-08-01 11:56:43,877 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 11:56:43,878 - INFO - Start iteration 25 ... 
+2024-08-01 11:56:45,653 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.001107
+2024-08-01 11:57:21,537 - INFO - Optimization overhead was 37.658965 seconds
+2024-08-01 11:57:21,538 - INFO - Evaluate candidate [ 0.42947941 -0.13379315] on subset size 4.000000
+2024-08-01 11:57:21,538 - INFO - Configuration achieved a performance of 0.401728 with cost 5.000000
+2024-08-01 11:57:21,538 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:57:21,540 - INFO - Start iteration 26 ... 
+2024-08-01 11:57:23,312 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.996144
+2024-08-01 11:57:59,331 - INFO - Optimization overhead was 37.790563 seconds
+2024-08-01 11:57:59,331 - INFO - Evaluate candidate [ 0.27040077 -0.11791093] on subset size 4.000000
+2024-08-01 11:57:59,331 - INFO - Configuration achieved a performance of 0.313941 with cost 5.000000
+2024-08-01 11:57:59,331 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:57:59,333 - INFO - Start iteration 27 ... 
+2024-08-01 11:58:01,132 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.996396
+2024-08-01 11:58:37,471 - INFO - Optimization overhead was 38.138581 seconds
+2024-08-01 11:58:37,471 - INFO - Evaluate candidate [ 0.51328165 -0.44079552] on subset size 4.000000
+2024-08-01 11:58:37,471 - INFO - Configuration achieved a performance of 0.450764 with cost 5.000000
+2024-08-01 11:58:37,471 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:58:37,473 - INFO - Start iteration 28 ... 
+2024-08-01 11:58:39,262 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.996171
+2024-08-01 11:59:15,677 - INFO - Optimization overhead was 38.203435 seconds
+2024-08-01 11:59:15,677 - INFO - Evaluate candidate [0.2474944  0.15328414] on subset size 4.000000
+2024-08-01 11:59:15,678 - INFO - Configuration achieved a performance of 0.420396 with cost 5.000000
+2024-08-01 11:59:15,678 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 11:59:15,680 - INFO - Start iteration 29 ... 
+2024-08-01 11:59:17,492 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.995809
+2024-08-01 11:59:54,451 - INFO - Optimization overhead was 38.770908 seconds
+2024-08-01 11:59:54,451 - INFO - Evaluate candidate [ 0.22490991 -0.30031359] on subset size 4.000000
+2024-08-01 11:59:54,452 - INFO - Configuration achieved a performance of 0.218334 with cost 5.000000
+2024-08-01 11:59:54,452 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 11:59:54,454 - INFO - Start iteration 30 ... 
+2024-08-01 11:59:56,247 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.995580
+2024-08-01 12:00:33,076 - INFO - Optimization overhead was 38.622761 seconds
+2024-08-01 12:00:33,077 - INFO - Evaluate candidate [0.26101212 0.03946384] on subset size 4.000000
+2024-08-01 12:00:33,077 - INFO - Configuration achieved a performance of 0.362532 with cost 5.000000
+2024-08-01 12:00:33,077 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:00:33,080 - INFO - Start iteration 31 ... 
+2024-08-01 12:00:34,918 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.996658
+2024-08-01 12:01:11,752 - INFO - Optimization overhead was 38.672251 seconds
+2024-08-01 12:01:11,753 - INFO - Evaluate candidate [ 0.2160482  -0.26333869] on subset size 4.000000
+2024-08-01 12:01:11,753 - INFO - Configuration achieved a performance of 0.239021 with cost 5.000000
+2024-08-01 12:01:11,753 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:01:11,755 - INFO - Start iteration 32 ... 
+2024-08-01 12:01:13,620 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.996705
+2024-08-01 12:01:50,592 - INFO - Optimization overhead was 38.837210 seconds
+2024-08-01 12:01:50,592 - INFO - Evaluate candidate [ 0.56101791 -0.30177707] on subset size 4.000000
+2024-08-01 12:01:50,593 - INFO - Configuration achieved a performance of 0.469924 with cost 5.000000
+2024-08-01 12:01:50,593 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:01:50,595 - INFO - Start iteration 33 ... 
+2024-08-01 12:01:52,375 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.997649
+2024-08-01 12:02:29,823 - INFO - Optimization overhead was 39.228031 seconds
+2024-08-01 12:02:29,824 - INFO - Evaluate candidate [ 0.20413196 -0.35582597] on subset size 4.000000
+2024-08-01 12:02:29,824 - INFO - Configuration achieved a performance of 0.202354 with cost 5.000000
+2024-08-01 12:02:29,824 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:02:29,826 - INFO - Start iteration 34 ... 
+2024-08-01 12:02:31,588 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.997314
+2024-08-01 12:03:09,118 - INFO - Optimization overhead was 39.292296 seconds
+2024-08-01 12:03:09,118 - INFO - Evaluate candidate [ 0.46020633 -0.07674098] on subset size 4.000000
+2024-08-01 12:03:09,119 - INFO - Configuration achieved a performance of 0.468010 with cost 5.000000
+2024-08-01 12:03:09,119 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:03:09,121 - INFO - Start iteration 35 ... 
+2024-08-01 12:03:10,939 - INFO - Current incumbent [ 0.04731054 -0.04372204  1.        ] with estimated performance 0.997770
+2024-08-01 12:03:49,415 - INFO - Optimization overhead was 40.293965 seconds
+2024-08-01 12:03:49,416 - INFO - Evaluate candidate [ 0.47750383 -0.48505071] on subset size 4.000000
+2024-08-01 12:03:49,416 - INFO - Configuration achieved a performance of 0.389415 with cost 5.000000
+2024-08-01 12:03:49,416 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:03:49,418 - INFO - Start iteration 36 ... 
+2024-08-01 12:03:51,251 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.998028
+2024-08-01 12:04:29,943 - INFO - Optimization overhead was 40.525024 seconds
+2024-08-01 12:04:29,943 - INFO - Evaluate candidate [0.40878793 0.17681726] on subset size 4.000000
+2024-08-01 12:04:29,944 - INFO - Configuration achieved a performance of 0.566512 with cost 5.000000
+2024-08-01 12:04:29,944 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 12:04:29,946 - INFO - Start iteration 37 ... 
+2024-08-01 12:04:31,818 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.998424
+2024-08-01 12:05:10,566 - INFO - Optimization overhead was 40.620018 seconds
+2024-08-01 12:05:10,566 - INFO - Evaluate candidate [ 0.3184224  -0.31451665] on subset size 4.000000
+2024-08-01 12:05:10,567 - INFO - Configuration achieved a performance of 0.271493 with cost 5.000000
+2024-08-01 12:05:10,567 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 12:05:10,569 - INFO - Start iteration 38 ... 
+2024-08-01 12:05:12,407 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.998507
+2024-08-01 12:05:51,301 - INFO - Optimization overhead was 40.731524 seconds
+2024-08-01 12:05:51,302 - INFO - Evaluate candidate [ 0.22088799 -0.54967015] on subset size 4.000000
+2024-08-01 12:05:51,302 - INFO - Configuration achieved a performance of 0.209414 with cost 5.000000
+2024-08-01 12:05:51,302 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:05:51,304 - INFO - Start iteration 39 ... 
+2024-08-01 12:05:53,177 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000936
+2024-08-01 12:06:32,316 - INFO - Optimization overhead was 41.010780 seconds
+2024-08-01 12:06:32,316 - INFO - Evaluate candidate [ 0.40142133 -0.0021373 ] on subset size 4.000000
+2024-08-01 12:06:32,317 - INFO - Configuration achieved a performance of 0.457236 with cost 5.000000
+2024-08-01 12:06:32,317 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 12:06:32,319 - INFO - Start iteration 40 ... 
+2024-08-01 12:06:34,170 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000579
+2024-08-01 12:07:13,486 - INFO - Optimization overhead was 41.166958 seconds
+2024-08-01 12:07:13,486 - INFO - Evaluate candidate [ 0.15186367 -0.27100927] on subset size 4.000000
+2024-08-01 12:07:13,487 - INFO - Configuration achieved a performance of 0.189138 with cost 5.000000
+2024-08-01 12:07:13,487 - INFO - Evaluation of this configuration took 0.000998 seconds
+2024-08-01 12:07:13,489 - INFO - Start iteration 41 ... 
+2024-08-01 12:07:15,345 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000672
+2024-08-01 12:07:55,426 - INFO - Optimization overhead was 41.937850 seconds
+2024-08-01 12:07:55,426 - INFO - Evaluate candidate [ 0.09740846 -0.33382482] on subset size 4.000000
+2024-08-01 12:07:55,427 - INFO - Configuration achieved a performance of 0.137532 with cost 5.000000
+2024-08-01 12:07:55,427 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 12:07:55,429 - INFO - Start iteration 42 ... 
+2024-08-01 12:07:57,296 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.001200
+2024-08-01 12:08:37,323 - INFO - Optimization overhead was 41.893335 seconds
+2024-08-01 12:08:37,323 - INFO - Evaluate candidate [ 0.56574058 -0.47176084] on subset size 4.000000
+2024-08-01 12:08:37,324 - INFO - Configuration achieved a performance of 0.477759 with cost 5.000000
+2024-08-01 12:08:37,324 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 12:08:37,326 - INFO - Start iteration 43 ... 
+2024-08-01 12:08:39,155 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000821
+2024-08-01 12:09:19,449 - INFO - Optimization overhead was 42.122942 seconds
+2024-08-01 12:09:19,449 - INFO - Evaluate candidate [ 0.18421641 -0.40109061] on subset size 4.000000
+2024-08-01 12:09:19,449 - INFO - Configuration achieved a performance of 0.187157 with cost 5.000000
+2024-08-01 12:09:19,450 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:09:19,452 - INFO - Start iteration 44 ... 
+2024-08-01 12:09:21,258 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.001034
+2024-08-01 12:10:01,858 - INFO - Optimization overhead was 42.405836 seconds
+2024-08-01 12:10:01,858 - INFO - Evaluate candidate [ 0.40349554 -0.24526129] on subset size 4.000000
+2024-08-01 12:10:01,858 - INFO - Configuration achieved a performance of 0.351072 with cost 5.000000
+2024-08-01 12:10:01,858 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:10:01,861 - INFO - Start iteration 45 ... 
+2024-08-01 12:10:03,714 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000909
+2024-08-01 12:10:44,634 - INFO - Optimization overhead was 42.773145 seconds
+2024-08-01 12:10:44,634 - INFO - Evaluate candidate [ 0.09678771 -0.30704475] on subset size 4.000000
+2024-08-01 12:10:44,634 - INFO - Configuration achieved a performance of 0.146747 with cost 5.000000
+2024-08-01 12:10:44,634 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:10:44,637 - INFO - Start iteration 46 ... 
+2024-08-01 12:10:46,591 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000909
+2024-08-01 12:11:28,998 - INFO - Optimization overhead was 44.361735 seconds
+2024-08-01 12:11:28,998 - INFO - Evaluate candidate [ 0.20353425 -0.07456925] on subset size 4.000000
+2024-08-01 12:11:28,998 - INFO - Configuration achieved a performance of 0.274187 with cost 5.000000
+2024-08-01 12:11:28,998 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:11:29,001 - INFO - Start iteration 47 ... 
+2024-08-01 12:11:30,953 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.001206
+2024-08-01 12:12:13,338 - INFO - Optimization overhead was 44.336874 seconds
+2024-08-01 12:12:13,338 - INFO - Evaluate candidate [ 0.24439176 -0.55308065] on subset size 4.000000
+2024-08-01 12:12:13,338 - INFO - Configuration achieved a performance of 0.233392 with cost 5.000000
+2024-08-01 12:12:13,338 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:12:13,341 - INFO - Start iteration 48 ... 
+2024-08-01 12:12:15,232 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.001201
+2024-08-01 12:12:57,615 - INFO - Optimization overhead was 44.274138 seconds
+2024-08-01 12:12:57,615 - INFO - Evaluate candidate [ 0.37893792 -0.35290552] on subset size 4.000000
+2024-08-01 12:12:57,615 - INFO - Configuration achieved a performance of 0.346391 with cost 5.000000
+2024-08-01 12:12:57,615 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:12:57,618 - INFO - Start iteration 49 ... 
+2024-08-01 12:12:59,598 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000942
+2024-08-01 12:13:42,195 - INFO - Optimization overhead was 44.576231 seconds
+2024-08-01 12:13:42,195 - INFO - Evaluate candidate [ 0.24909808 -0.09874649] on subset size 4.000000
+2024-08-01 12:13:42,196 - INFO - Configuration achieved a performance of 0.321180 with cost 5.000000
+2024-08-01 12:13:42,196 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:13:42,198 - INFO - Start iteration 50 ... 
+2024-08-01 12:13:44,649 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000473
+2024-08-01 12:14:27,745 - INFO - Optimization overhead was 45.546581 seconds
+2024-08-01 12:14:27,745 - INFO - Evaluate candidate [ 0.40385331 -0.69556396] on subset size 4.000000
+2024-08-01 12:14:27,745 - INFO - Configuration achieved a performance of 0.363402 with cost 5.000000
+2024-08-01 12:14:27,746 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:14:27,748 - INFO - Start iteration 51 ... 
+2024-08-01 12:14:30,196 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000417
+2024-08-01 12:15:18,172 - INFO - Optimization overhead was 50.423468 seconds
+2024-08-01 12:15:18,173 - INFO - Evaluate candidate [0.15215405 0.13874528] on subset size 4.000000
+2024-08-01 12:15:18,173 - INFO - Configuration achieved a performance of 0.358580 with cost 5.000000
+2024-08-01 12:15:18,173 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:15:18,176 - INFO - Start iteration 52 ... 
+2024-08-01 12:15:20,901 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000155
+2024-08-01 12:16:09,699 - INFO - Optimization overhead was 51.523043 seconds
+2024-08-01 12:16:09,699 - INFO - Evaluate candidate [ 0.34370147 -0.22332065] on subset size 4.000000
+2024-08-01 12:16:09,700 - INFO - Configuration achieved a performance of 0.337077 with cost 5.000000
+2024-08-01 12:16:09,700 - INFO - Evaluation of this configuration took 0.001002 seconds
+2024-08-01 12:16:09,703 - INFO - Start iteration 53 ... 
+2024-08-01 12:16:12,407 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000072
+2024-08-01 12:17:01,405 - INFO - Optimization overhead was 51.702305 seconds
+2024-08-01 12:17:01,405 - INFO - Evaluate candidate [0.15824887 0.0023976 ] on subset size 4.000000
+2024-08-01 12:17:01,406 - INFO - Configuration achieved a performance of 0.292143 with cost 5.000000
+2024-08-01 12:17:01,406 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 12:17:01,409 - INFO - Start iteration 54 ... 
+2024-08-01 12:17:04,158 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000280
+2024-08-01 12:17:53,907 - INFO - Optimization overhead was 52.498304 seconds
+2024-08-01 12:17:53,907 - INFO - Evaluate candidate [ 0.08730396 -0.10757464] on subset size 4.000000
+2024-08-01 12:17:53,908 - INFO - Configuration achieved a performance of 0.217324 with cost 5.000000
+2024-08-01 12:17:53,908 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 12:17:53,910 - INFO - Start iteration 55 ... 
+2024-08-01 12:17:56,721 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999985
+2024-08-01 12:18:46,904 - INFO - Optimization overhead was 52.994023 seconds
+2024-08-01 12:18:46,904 - INFO - Evaluate candidate [ 0.32248358 -0.37754861] on subset size 4.000000
+2024-08-01 12:18:46,905 - INFO - Configuration achieved a performance of 0.280347 with cost 5.000000
+2024-08-01 12:18:46,905 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:18:46,908 - INFO - Start iteration 56 ... 
+2024-08-01 12:18:49,695 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000097
+2024-08-01 12:19:39,859 - INFO - Optimization overhead was 52.950733 seconds
+2024-08-01 12:19:39,859 - INFO - Evaluate candidate [0.32195567 0.06323583] on subset size 4.000000
+2024-08-01 12:19:39,860 - INFO - Configuration achieved a performance of 0.443776 with cost 5.000000
+2024-08-01 12:19:39,860 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:19:39,864 - INFO - Start iteration 57 ... 
+2024-08-01 12:19:42,624 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000410
+2024-08-01 12:20:33,157 - INFO - Optimization overhead was 53.292312 seconds
+2024-08-01 12:20:33,157 - INFO - Evaluate candidate [ 0.4350696  -0.45405036] on subset size 4.000000
+2024-08-01 12:20:33,157 - INFO - Configuration achieved a performance of 0.373713 with cost 5.000000
+2024-08-01 12:20:33,157 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:20:33,160 - INFO - Start iteration 58 ... 
+2024-08-01 12:20:35,906 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000337
+2024-08-01 12:21:26,760 - INFO - Optimization overhead was 53.600880 seconds
+2024-08-01 12:21:26,760 - INFO - Evaluate candidate [0.38111426 0.0444034 ] on subset size 4.000000
+2024-08-01 12:21:26,760 - INFO - Configuration achieved a performance of 0.449350 with cost 5.000000
+2024-08-01 12:21:26,761 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:21:26,763 - INFO - Start iteration 59 ... 
+2024-08-01 12:21:29,788 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000612
+2024-08-01 12:22:20,999 - INFO - Optimization overhead was 54.235100 seconds
+2024-08-01 12:22:21,000 - INFO - Evaluate candidate [ 0.40364606 -0.55061062] on subset size 4.000000
+2024-08-01 12:22:21,000 - INFO - Configuration achieved a performance of 0.346555 with cost 5.000000
+2024-08-01 12:22:21,000 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:22:21,003 - INFO - Start iteration 60 ... 
+2024-08-01 12:22:23,955 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000303
+2024-08-01 12:23:15,953 - INFO - Optimization overhead was 54.949310 seconds
+2024-08-01 12:23:15,954 - INFO - Evaluate candidate [ 0.22167586 -0.28711028] on subset size 4.000000
+2024-08-01 12:23:15,954 - INFO - Configuration achieved a performance of 0.235237 with cost 5.000000
+2024-08-01 12:23:15,954 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:23:15,957 - INFO - Start iteration 61 ... 
+2024-08-01 12:23:18,854 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000263
+2024-08-01 12:24:11,323 - INFO - Optimization overhead was 55.365782 seconds
+2024-08-01 12:24:11,323 - INFO - Evaluate candidate [ 0.32679901 -0.05954037] on subset size 4.000000
+2024-08-01 12:24:11,324 - INFO - Configuration achieved a performance of 0.358180 with cost 5.000000
+2024-08-01 12:24:11,324 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 12:24:11,327 - INFO - Start iteration 62 ... 
+2024-08-01 12:24:14,280 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000001
+2024-08-01 12:25:06,603 - INFO - Optimization overhead was 55.275925 seconds
+2024-08-01 12:25:06,604 - INFO - Evaluate candidate [ 0.27712133 -0.20901365] on subset size 4.000000
+2024-08-01 12:25:06,604 - INFO - Configuration achieved a performance of 0.271297 with cost 5.000000
+2024-08-01 12:25:06,604 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:25:06,607 - INFO - Start iteration 63 ... 
+2024-08-01 12:25:09,698 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000166
+2024-08-01 12:26:04,161 - INFO - Optimization overhead was 57.554402 seconds
+2024-08-01 12:26:04,161 - INFO - Evaluate candidate [ 0.37119449 -0.34942398] on subset size 4.000000
+2024-08-01 12:26:04,161 - INFO - Configuration achieved a performance of 0.324432 with cost 5.000000
+2024-08-01 12:26:04,162 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:26:04,164 - INFO - Start iteration 64 ... 
+2024-08-01 12:26:07,224 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000241
+2024-08-01 12:27:00,531 - INFO - Optimization overhead was 56.365643 seconds
+2024-08-01 12:27:00,531 - INFO - Evaluate candidate [ 0.35982328 -0.62836093] on subset size 4.000000
+2024-08-01 12:27:00,532 - INFO - Configuration achieved a performance of 0.343207 with cost 5.000000
+2024-08-01 12:27:00,532 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 12:27:00,535 - INFO - Start iteration 65 ... 
+2024-08-01 12:27:03,486 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000254
+2024-08-01 12:27:56,914 - INFO - Optimization overhead was 56.379072 seconds
+2024-08-01 12:27:56,914 - INFO - Evaluate candidate [ 0.36306543 -0.07811433] on subset size 4.000000
+2024-08-01 12:27:56,914 - INFO - Configuration achieved a performance of 0.382216 with cost 5.000000
+2024-08-01 12:27:56,915 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:27:56,918 - INFO - Start iteration 66 ... 
+2024-08-01 12:28:00,053 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000162
+2024-08-01 12:28:53,741 - INFO - Optimization overhead was 56.823841 seconds
+2024-08-01 12:28:53,742 - INFO - Evaluate candidate [ 0.31253923 -0.19627214] on subset size 4.000000
+2024-08-01 12:28:53,742 - INFO - Configuration achieved a performance of 0.309719 with cost 5.000000
+2024-08-01 12:28:53,742 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:28:53,746 - INFO - Start iteration 67 ... 
+2024-08-01 12:28:56,844 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000369
+2024-08-01 12:29:51,005 - INFO - Optimization overhead was 57.258970 seconds
+2024-08-01 12:29:51,006 - INFO - Evaluate candidate [ 0.2368372  -0.18636972] on subset size 4.000000
+2024-08-01 12:29:51,006 - INFO - Configuration achieved a performance of 0.273056 with cost 5.000000
+2024-08-01 12:29:51,006 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:29:51,009 - INFO - Start iteration 68 ... 
+2024-08-01 12:29:53,973 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000184
+2024-08-01 12:30:48,495 - INFO - Optimization overhead was 57.485621 seconds
+2024-08-01 12:30:48,495 - INFO - Evaluate candidate [ 0.16256658 -0.37018536] on subset size 4.000000
+2024-08-01 12:30:48,496 - INFO - Configuration achieved a performance of 0.193385 with cost 5.000000
+2024-08-01 12:30:48,496 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 12:30:48,499 - INFO - Start iteration 69 ... 
+2024-08-01 12:30:51,682 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000015
+2024-08-01 12:31:47,210 - INFO - Optimization overhead was 58.711063 seconds
+2024-08-01 12:31:47,211 - INFO - Evaluate candidate [ 0.32559796 -0.35576704] on subset size 4.000000
+2024-08-01 12:31:47,211 - INFO - Configuration achieved a performance of 0.294680 with cost 5.000000
+2024-08-01 12:31:47,211 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:31:47,214 - INFO - Start iteration 70 ... 
+2024-08-01 12:31:50,300 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000239
+2024-08-01 12:32:46,330 - INFO - Optimization overhead was 59.114514 seconds
+2024-08-01 12:32:46,330 - INFO - Evaluate candidate [ 0.15154652 -0.19149878] on subset size 4.000000
+2024-08-01 12:32:46,331 - INFO - Configuration achieved a performance of 0.204534 with cost 5.000000
+2024-08-01 12:32:46,331 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 12:32:46,334 - INFO - Start iteration 71 ... 
+2024-08-01 12:32:49,569 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999965
+2024-08-01 12:33:45,387 - INFO - Optimization overhead was 59.052602 seconds
+2024-08-01 12:33:45,388 - INFO - Evaluate candidate [ 0.1238806 -0.1859708] on subset size 4.000000
+2024-08-01 12:33:45,388 - INFO - Configuration achieved a performance of 0.196931 with cost 5.000000
+2024-08-01 12:33:45,388 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:33:45,391 - INFO - Start iteration 72 ... 
+2024-08-01 12:33:48,550 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000010
+2024-08-01 12:34:44,954 - INFO - Optimization overhead was 59.563081 seconds
+2024-08-01 12:34:44,955 - INFO - Evaluate candidate [ 0.27530576 -0.12844237] on subset size 4.000000
+2024-08-01 12:34:44,955 - INFO - Configuration achieved a performance of 0.329423 with cost 5.000000
+2024-08-01 12:34:44,955 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:34:44,958 - INFO - Start iteration 73 ... 
+2024-08-01 12:34:48,199 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000020
+2024-08-01 12:35:45,372 - INFO - Optimization overhead was 60.412522 seconds
+2024-08-01 12:35:45,373 - INFO - Evaluate candidate [ 0.33285444 -0.60086097] on subset size 4.000000
+2024-08-01 12:35:45,373 - INFO - Configuration achieved a performance of 0.300409 with cost 5.000000
+2024-08-01 12:35:45,373 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:35:45,376 - INFO - Start iteration 74 ... 
+2024-08-01 12:35:48,606 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000361
+2024-08-01 12:36:45,998 - INFO - Optimization overhead was 60.620953 seconds
+2024-08-01 12:36:45,999 - INFO - Evaluate candidate [ 0.20610756 -0.36371313] on subset size 4.000000
+2024-08-01 12:36:45,999 - INFO - Configuration achieved a performance of 0.213386 with cost 5.000000
+2024-08-01 12:36:45,999 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:36:46,002 - INFO - Start iteration 75 ... 
+2024-08-01 12:36:49,270 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999855
+2024-08-01 12:37:46,511 - INFO - Optimization overhead was 60.509589 seconds
+2024-08-01 12:37:46,511 - INFO - Evaluate candidate [ 0.20296607 -0.51807015] on subset size 4.000000
+2024-08-01 12:37:46,512 - INFO - Configuration achieved a performance of 0.207577 with cost 5.000000
+2024-08-01 12:37:46,512 - INFO - Evaluation of this configuration took 0.001002 seconds
+2024-08-01 12:37:46,515 - INFO - Start iteration 76 ... 
+2024-08-01 12:37:49,860 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000426
+2024-08-01 12:38:48,350 - INFO - Optimization overhead was 61.834604 seconds
+2024-08-01 12:38:48,351 - INFO - Evaluate candidate [ 0.06658273 -0.29306864] on subset size 4.000000
+2024-08-01 12:38:48,351 - INFO - Configuration achieved a performance of 0.152179 with cost 5.000000
+2024-08-01 12:38:48,351 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:38:48,355 - INFO - Start iteration 77 ... 
+2024-08-01 12:38:51,585 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000426
+2024-08-01 12:39:50,356 - INFO - Optimization overhead was 62.000617 seconds
+2024-08-01 12:39:50,357 - INFO - Evaluate candidate [ 0.10326149 -0.3074162 ] on subset size 4.000000
+2024-08-01 12:39:50,357 - INFO - Configuration achieved a performance of 0.162094 with cost 5.000000
+2024-08-01 12:39:50,357 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:39:50,360 - INFO - Start iteration 78 ... 
+2024-08-01 12:39:53,664 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000204
+2024-08-01 12:40:53,138 - INFO - Optimization overhead was 62.777624 seconds
+2024-08-01 12:40:53,139 - INFO - Evaluate candidate [ 0.21370219 -0.31652329] on subset size 4.000000
+2024-08-01 12:40:53,139 - INFO - Configuration achieved a performance of 0.216843 with cost 5.000000
+2024-08-01 12:40:53,139 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:40:53,143 - INFO - Start iteration 79 ... 
+2024-08-01 12:40:56,576 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000191
+2024-08-01 12:41:56,085 - INFO - Optimization overhead was 62.942127 seconds
+2024-08-01 12:41:56,085 - INFO - Evaluate candidate [ 0.38862401 -0.49175752] on subset size 4.000000
+2024-08-01 12:41:56,085 - INFO - Configuration achieved a performance of 0.330072 with cost 5.000000
+2024-08-01 12:41:56,085 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:41:56,089 - INFO - Start iteration 80 ... 
+2024-08-01 12:41:59,441 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999894
+2024-08-01 12:42:59,163 - INFO - Optimization overhead was 63.073166 seconds
+2024-08-01 12:42:59,163 - INFO - Evaluate candidate [ 0.15495447 -0.26958509] on subset size 4.000000
+2024-08-01 12:42:59,163 - INFO - Configuration achieved a performance of 0.205378 with cost 5.000000
+2024-08-01 12:42:59,163 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:42:59,167 - INFO - Start iteration 81 ... 
+2024-08-01 12:43:02,536 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999743
+2024-08-01 12:44:03,268 - INFO - Optimization overhead was 64.101062 seconds
+2024-08-01 12:44:03,269 - INFO - Evaluate candidate [ 0.55381089 -0.48562121] on subset size 4.000000
+2024-08-01 12:44:03,269 - INFO - Configuration achieved a performance of 0.457893 with cost 5.000000
+2024-08-01 12:44:03,269 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:44:03,273 - INFO - Start iteration 82 ... 
+2024-08-01 12:44:06,709 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000244
+2024-08-01 12:45:10,226 - INFO - Optimization overhead was 66.953888 seconds
+2024-08-01 12:45:10,226 - INFO - Evaluate candidate [ 0.3313594  -0.54030563] on subset size 4.000000
+2024-08-01 12:45:10,227 - INFO - Configuration achieved a performance of 0.290849 with cost 5.000000
+2024-08-01 12:45:10,227 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 12:45:10,230 - INFO - Start iteration 83 ... 
+2024-08-01 12:45:13,673 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000141
+2024-08-01 12:46:18,295 - INFO - Optimization overhead was 68.064723 seconds
+2024-08-01 12:46:18,295 - INFO - Evaluate candidate [ 0.34359449 -0.34511819] on subset size 5.000000
+2024-08-01 12:46:18,295 - INFO - Configuration achieved a performance of 0.337667 with cost 5.000000
+2024-08-01 12:46:18,296 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:46:18,301 - INFO - Start iteration 84 ... 
+2024-08-01 12:46:21,781 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999985
+2024-08-01 12:47:26,521 - INFO - Optimization overhead was 68.219699 seconds
+2024-08-01 12:47:26,521 - INFO - Evaluate candidate [ 0.2305058  -0.25150172] on subset size 4.000000
+2024-08-01 12:47:26,521 - INFO - Configuration achieved a performance of 0.239906 with cost 5.000000
+2024-08-01 12:47:26,521 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:47:26,526 - INFO - Start iteration 85 ... 
+2024-08-01 12:47:30,003 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000128
+2024-08-01 12:48:35,292 - INFO - Optimization overhead was 68.765645 seconds
+2024-08-01 12:48:35,293 - INFO - Evaluate candidate [ 0.26673806 -0.07708311] on subset size 4.000000
+2024-08-01 12:48:35,293 - INFO - Configuration achieved a performance of 0.320022 with cost 5.000000
+2024-08-01 12:48:35,293 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:48:35,297 - INFO - Start iteration 86 ... 
+2024-08-01 12:48:38,663 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 1.000314
+2024-08-01 12:49:42,651 - INFO - Optimization overhead was 67.354232 seconds
+2024-08-01 12:49:42,651 - INFO - Evaluate candidate [ 0.33538729 -0.31176226] on subset size 4.000000
+2024-08-01 12:49:42,651 - INFO - Configuration achieved a performance of 0.299444 with cost 5.000000
+2024-08-01 12:49:42,651 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:49:42,655 - INFO - Start iteration 87 ... 
+2024-08-01 12:49:45,998 - INFO - Current incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.999740
+2024-08-01 12:50:52,573 - INFO - Optimization overhead was 69.918607 seconds
+2024-08-01 12:50:52,573 - INFO - Evaluate candidate [0.09621255 0.10603876] on subset size 4.000000
+2024-08-01 12:50:52,573 - INFO - Configuration achieved a performance of 0.314476 with cost 5.000000
+2024-08-01 12:50:52,573 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:50:54,293 - INFO - Final incumbent [0.03904419 0.03022588 1.        ] with estimated performance 0.000091
+2024-08-01 12:50:54,304 - INFO - Start iteration 0 ... 
+2024-08-01 12:50:57,837 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006730
+2024-08-01 12:51:38,343 - INFO - Optimization overhead was 44.039757 seconds
+2024-08-01 12:51:38,344 - INFO - Evaluate candidate [ 0.04200023 -0.36163922] on subset size 5.000000
+2024-08-01 12:51:38,344 - INFO - Configuration achieved a performance of 0.157067 with cost 5.000000
+2024-08-01 12:51:38,344 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:51:38,345 - INFO - Start iteration 1 ... 
+2024-08-01 12:51:40,120 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006753
+2024-08-01 12:52:14,802 - INFO - Optimization overhead was 36.456622 seconds
+2024-08-01 12:52:14,803 - INFO - Evaluate candidate [-0.92483031 -0.74845419] on subset size 5.000000
+2024-08-01 12:52:14,803 - INFO - Configuration achieved a performance of 0.122576 with cost 5.000000
+2024-08-01 12:52:14,803 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:52:14,804 - INFO - Start iteration 2 ... 
+2024-08-01 12:52:16,500 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006736
+2024-08-01 12:52:51,749 - INFO - Optimization overhead was 36.944664 seconds
+2024-08-01 12:52:51,750 - INFO - Evaluate candidate [ 0.26588719 -0.58289962] on subset size 5.000000
+2024-08-01 12:52:51,750 - INFO - Configuration achieved a performance of 0.289026 with cost 5.000000
+2024-08-01 12:52:51,750 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:52:51,751 - INFO - Start iteration 3 ... 
+2024-08-01 12:52:53,444 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006735
+2024-08-01 12:53:27,929 - INFO - Optimization overhead was 36.178798 seconds
+2024-08-01 12:53:27,929 - INFO - Evaluate candidate [ 0.04250212 -0.6466711 ] on subset size 5.000000
+2024-08-01 12:53:27,930 - INFO - Configuration achieved a performance of 0.148390 with cost 5.000000
+2024-08-01 12:53:27,930 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 12:53:27,931 - INFO - Start iteration 4 ... 
+2024-08-01 12:53:29,675 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006765
+2024-08-01 12:54:01,886 - INFO - Optimization overhead was 33.954267 seconds
+2024-08-01 12:54:01,886 - INFO - Evaluate candidate [0.08046869 0.7346548 ] on subset size 5.000000
+2024-08-01 12:54:01,886 - INFO - Configuration achieved a performance of 0.923506 with cost 5.000000
+2024-08-01 12:54:01,886 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:54:01,888 - INFO - Start iteration 5 ... 
+2024-08-01 12:54:03,624 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006735
+2024-08-01 12:54:32,888 - INFO - Optimization overhead was 31.000031 seconds
+2024-08-01 12:54:32,888 - INFO - Evaluate candidate [-0.35213871 -0.11613733] on subset size 4.000000
+2024-08-01 12:54:32,888 - INFO - Configuration achieved a performance of 0.060799 with cost 5.000000
+2024-08-01 12:54:32,888 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:54:32,890 - INFO - Start iteration 6 ... 
+2024-08-01 12:54:34,552 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006732
+2024-08-01 12:55:02,124 - INFO - Optimization overhead was 29.233950 seconds
+2024-08-01 12:55:02,125 - INFO - Evaluate candidate [-0.47906095 -0.657213  ] on subset size 5.000000
+2024-08-01 12:55:02,125 - INFO - Configuration achieved a performance of 0.016521 with cost 5.000000
+2024-08-01 12:55:02,125 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:55:02,126 - INFO - Start iteration 7 ... 
+2024-08-01 12:55:03,864 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006703
+2024-08-01 12:55:32,923 - INFO - Optimization overhead was 30.796367 seconds
+2024-08-01 12:55:32,923 - INFO - Evaluate candidate [-0.12964033 -0.07340748] on subset size 5.000000
+2024-08-01 12:55:32,924 - INFO - Configuration achieved a performance of 0.146856 with cost 5.000000
+2024-08-01 12:55:32,924 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 12:55:32,925 - INFO - Start iteration 8 ... 
+2024-08-01 12:55:34,707 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006716
+2024-08-01 12:56:07,270 - INFO - Optimization overhead was 34.345481 seconds
+2024-08-01 12:56:07,271 - INFO - Evaluate candidate [-0.30092709  0.44011307] on subset size 5.000000
+2024-08-01 12:56:07,271 - INFO - Configuration achieved a performance of 0.452635 with cost 5.000000
+2024-08-01 12:56:07,271 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:56:07,272 - INFO - Start iteration 9 ... 
+2024-08-01 12:56:09,057 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006735
+2024-08-01 12:56:38,036 - INFO - Optimization overhead was 30.763151 seconds
+2024-08-01 12:56:38,036 - INFO - Evaluate candidate [0.19237231 0.04333308] on subset size 5.000000
+2024-08-01 12:56:38,037 - INFO - Configuration achieved a performance of 0.382060 with cost 5.000000
+2024-08-01 12:56:38,037 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 12:56:38,038 - INFO - Start iteration 10 ... 
+2024-08-01 12:56:39,811 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006732
+2024-08-01 12:57:09,139 - INFO - Optimization overhead was 31.100881 seconds
+2024-08-01 12:57:09,140 - INFO - Evaluate candidate [-0.02113697 -0.17640011] on subset size 4.000000
+2024-08-01 12:57:09,140 - INFO - Configuration achieved a performance of 0.141787 with cost 5.000000
+2024-08-01 12:57:09,140 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:57:09,142 - INFO - Start iteration 11 ... 
+2024-08-01 12:57:10,905 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006727
+2024-08-01 12:57:40,049 - INFO - Optimization overhead was 30.906904 seconds
+2024-08-01 12:57:40,050 - INFO - Evaluate candidate [-0.1526846   0.05862172] on subset size 5.000000
+2024-08-01 12:57:40,050 - INFO - Configuration achieved a performance of 0.195544 with cost 5.000000
+2024-08-01 12:57:40,050 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:57:40,051 - INFO - Start iteration 12 ... 
+2024-08-01 12:57:41,843 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006728
+2024-08-01 12:58:11,192 - INFO - Optimization overhead was 31.139917 seconds
+2024-08-01 12:58:11,192 - INFO - Evaluate candidate [-0.07926689  0.22401786] on subset size 4.000000
+2024-08-01 12:58:11,192 - INFO - Configuration achieved a performance of 0.309837 with cost 5.000000
+2024-08-01 12:58:11,192 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:58:11,194 - INFO - Start iteration 13 ... 
+2024-08-01 12:58:12,967 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006728
+2024-08-01 12:58:42,849 - INFO - Optimization overhead was 31.655621 seconds
+2024-08-01 12:58:42,850 - INFO - Evaluate candidate [-0.40224702 -0.07657223] on subset size 5.000000
+2024-08-01 12:58:42,850 - INFO - Configuration achieved a performance of 0.088318 with cost 5.000000
+2024-08-01 12:58:42,850 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 12:58:42,852 - INFO - Start iteration 14 ... 
+2024-08-01 12:58:44,667 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006730
+2024-08-01 12:59:13,909 - INFO - Optimization overhead was 31.056846 seconds
+2024-08-01 12:59:13,909 - INFO - Evaluate candidate [-0.66037929  0.15153732] on subset size 4.000000
+2024-08-01 12:59:13,910 - INFO - Configuration achieved a performance of 0.208329 with cost 5.000000
+2024-08-01 12:59:13,910 - INFO - Evaluation of this configuration took 0.000998 seconds
+2024-08-01 12:59:13,911 - INFO - Start iteration 15 ... 
+2024-08-01 12:59:15,665 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006732
+2024-08-01 12:59:43,021 - INFO - Optimization overhead was 29.109521 seconds
+2024-08-01 12:59:43,021 - INFO - Evaluate candidate [0.05094143 0.51371106] on subset size 4.000000
+2024-08-01 12:59:43,022 - INFO - Configuration achieved a performance of 0.600742 with cost 5.000000
+2024-08-01 12:59:43,022 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 12:59:43,023 - INFO - Start iteration 16 ... 
+2024-08-01 12:59:44,684 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006733
+2024-08-01 13:00:12,357 - INFO - Optimization overhead was 29.334378 seconds
+2024-08-01 13:00:12,357 - INFO - Evaluate candidate [-0.46543357 -0.05705775] on subset size 4.000000
+2024-08-01 13:00:12,358 - INFO - Configuration achieved a performance of 0.082736 with cost 5.000000
+2024-08-01 13:00:12,358 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 13:00:12,359 - INFO - Start iteration 17 ... 
+2024-08-01 13:00:14,054 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006732
+2024-08-01 13:00:41,842 - INFO - Optimization overhead was 29.482917 seconds
+2024-08-01 13:00:41,842 - INFO - Evaluate candidate [-0.33040544 -0.00659332] on subset size 5.000000
+2024-08-01 13:00:41,843 - INFO - Configuration achieved a performance of 0.126293 with cost 5.000000
+2024-08-01 13:00:41,843 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 13:00:41,844 - INFO - Start iteration 18 ... 
+2024-08-01 13:00:43,513 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006729
+2024-08-01 13:01:17,196 - INFO - Optimization overhead was 35.352280 seconds
+2024-08-01 13:01:17,197 - INFO - Evaluate candidate [-0.35338736  0.50060601] on subset size 5.000000
+2024-08-01 13:01:17,197 - INFO - Configuration achieved a performance of 0.487169 with cost 5.000000
+2024-08-01 13:01:17,197 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:01:17,199 - INFO - Start iteration 19 ... 
+2024-08-01 13:01:18,888 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006735
+2024-08-01 13:01:53,091 - INFO - Optimization overhead was 35.891785 seconds
+2024-08-01 13:01:53,091 - INFO - Evaluate candidate [0.26112099 0.28582571] on subset size 5.000000
+2024-08-01 13:01:53,092 - INFO - Configuration achieved a performance of 0.598152 with cost 5.000000
+2024-08-01 13:01:53,092 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 13:01:53,093 - INFO - Start iteration 20 ... 
+2024-08-01 13:01:54,813 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006738
+2024-08-01 13:02:28,984 - INFO - Optimization overhead was 35.889572 seconds
+2024-08-01 13:02:28,984 - INFO - Evaluate candidate [-0.77051197  0.53751642] on subset size 5.000000
+2024-08-01 13:02:28,985 - INFO - Configuration achieved a performance of 0.559456 with cost 5.000000
+2024-08-01 13:02:28,985 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:02:28,987 - INFO - Start iteration 21 ... 
+2024-08-01 13:02:30,676 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006736
+2024-08-01 13:03:05,061 - INFO - Optimization overhead was 36.074435 seconds
+2024-08-01 13:03:05,061 - INFO - Evaluate candidate [-0.42780725  0.29143431] on subset size 5.000000
+2024-08-01 13:03:05,061 - INFO - Configuration achieved a performance of 0.315049 with cost 5.000000
+2024-08-01 13:03:05,061 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:03:05,063 - INFO - Start iteration 22 ... 
+2024-08-01 13:03:06,721 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006735
+2024-08-01 13:03:41,803 - INFO - Optimization overhead was 36.740198 seconds
+2024-08-01 13:03:41,803 - INFO - Evaluate candidate [-0.45735569  0.23772   ] on subset size 5.000000
+2024-08-01 13:03:41,804 - INFO - Configuration achieved a performance of 0.270172 with cost 5.000000
+2024-08-01 13:03:41,804 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 13:03:41,806 - INFO - Start iteration 23 ... 
+2024-08-01 13:03:43,542 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006734
+2024-08-01 13:04:18,665 - INFO - Optimization overhead was 36.858151 seconds
+2024-08-01 13:04:18,666 - INFO - Evaluate candidate [-0.28538207  0.19278064] on subset size 5.000000
+2024-08-01 13:04:18,666 - INFO - Configuration achieved a performance of 0.255822 with cost 5.000000
+2024-08-01 13:04:18,666 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:04:18,668 - INFO - Start iteration 24 ... 
+2024-08-01 13:04:20,426 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006735
+2024-08-01 13:04:55,545 - INFO - Optimization overhead was 36.877250 seconds
+2024-08-01 13:04:55,545 - INFO - Evaluate candidate [-0.04506338  0.75645494] on subset size 5.000000
+2024-08-01 13:04:55,546 - INFO - Configuration achieved a performance of 0.888360 with cost 5.000000
+2024-08-01 13:04:55,546 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:04:55,547 - INFO - Start iteration 25 ... 
+2024-08-01 13:04:57,354 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006734
+2024-08-01 13:05:32,722 - INFO - Optimization overhead was 37.174844 seconds
+2024-08-01 13:05:32,722 - INFO - Evaluate candidate [-0.28612037 -0.2472087 ] on subset size 4.000000
+2024-08-01 13:05:32,723 - INFO - Configuration achieved a performance of 0.035332 with cost 5.000000
+2024-08-01 13:05:32,723 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 13:05:32,725 - INFO - Start iteration 26 ... 
+2024-08-01 13:05:34,457 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006735
+2024-08-01 13:06:10,279 - INFO - Optimization overhead was 37.554525 seconds
+2024-08-01 13:06:10,279 - INFO - Evaluate candidate [0.15457032 0.24913114] on subset size 4.000000
+2024-08-01 13:06:10,280 - INFO - Configuration achieved a performance of 0.438387 with cost 5.000000
+2024-08-01 13:06:10,280 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:06:10,282 - INFO - Start iteration 27 ... 
+2024-08-01 13:06:12,040 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006735
+2024-08-01 13:06:47,647 - INFO - Optimization overhead was 37.364138 seconds
+2024-08-01 13:06:47,647 - INFO - Evaluate candidate [-0.00449629  0.54916882] on subset size 5.000000
+2024-08-01 13:06:47,647 - INFO - Configuration achieved a performance of 0.648797 with cost 5.000000
+2024-08-01 13:06:47,647 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:06:47,649 - INFO - Start iteration 28 ... 
+2024-08-01 13:06:49,394 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006733
+2024-08-01 13:07:25,199 - INFO - Optimization overhead was 37.549591 seconds
+2024-08-01 13:07:25,199 - INFO - Evaluate candidate [0.31692387 0.10369056] on subset size 5.000000
+2024-08-01 13:07:25,200 - INFO - Configuration achieved a performance of 0.501479 with cost 5.000000
+2024-08-01 13:07:25,200 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 13:07:25,202 - INFO - Start iteration 29 ... 
+2024-08-01 13:07:26,937 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006729
+2024-08-01 13:08:03,485 - INFO - Optimization overhead was 38.283011 seconds
+2024-08-01 13:08:03,485 - INFO - Evaluate candidate [ 0.7042147  -0.37512521] on subset size 5.000000
+2024-08-01 13:08:03,485 - INFO - Configuration achieved a performance of 0.724177 with cost 5.000000
+2024-08-01 13:08:03,485 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:08:03,487 - INFO - Start iteration 30 ... 
+2024-08-01 13:08:05,342 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006730
+2024-08-01 13:08:41,456 - INFO - Optimization overhead was 37.969271 seconds
+2024-08-01 13:08:41,456 - INFO - Evaluate candidate [-0.62523654 -0.49990262] on subset size 4.000000
+2024-08-01 13:08:41,457 - INFO - Configuration achieved a performance of 0.021243 with cost 5.000000
+2024-08-01 13:08:41,457 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 13:08:41,459 - INFO - Start iteration 31 ... 
+2024-08-01 13:08:43,292 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006729
+2024-08-01 13:09:20,867 - INFO - Optimization overhead was 39.407686 seconds
+2024-08-01 13:09:20,867 - INFO - Evaluate candidate [ 0.17118624 -0.3039331 ] on subset size 5.000000
+2024-08-01 13:09:20,867 - INFO - Configuration achieved a performance of 0.244548 with cost 5.000000
+2024-08-01 13:09:20,867 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:09:20,869 - INFO - Start iteration 32 ... 
+2024-08-01 13:09:22,807 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006730
+2024-08-01 13:10:01,583 - INFO - Optimization overhead was 40.713763 seconds
+2024-08-01 13:10:01,584 - INFO - Evaluate candidate [ 0.98634758 -0.57647175] on subset size 4.000000
+2024-08-01 13:10:01,584 - INFO - Configuration achieved a performance of 1.024488 with cost 5.000000
+2024-08-01 13:10:01,584 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:10:01,586 - INFO - Start iteration 33 ... 
+2024-08-01 13:10:03,557 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006730
+2024-08-01 13:10:42,726 - INFO - Optimization overhead was 41.139811 seconds
+2024-08-01 13:10:42,726 - INFO - Evaluate candidate [-0.23787205 -0.00904473] on subset size 5.000000
+2024-08-01 13:10:42,726 - INFO - Configuration achieved a performance of 0.147739 with cost 5.000000
+2024-08-01 13:10:42,726 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:10:42,728 - INFO - Start iteration 34 ... 
+2024-08-01 13:10:44,549 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006729
+2024-08-01 13:11:21,889 - INFO - Optimization overhead was 39.160237 seconds
+2024-08-01 13:11:21,889 - INFO - Evaluate candidate [-0.45750126  0.25893121] on subset size 5.000000
+2024-08-01 13:11:21,890 - INFO - Configuration achieved a performance of 0.272124 with cost 5.000000
+2024-08-01 13:11:21,890 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:11:21,892 - INFO - Start iteration 35 ... 
+2024-08-01 13:11:23,737 - INFO - Current incumbent [-0.07290876 -0.09002733  1.        ] with estimated performance 1.006729
+2024-08-01 13:12:00,838 - INFO - Optimization overhead was 38.946447 seconds
+2024-08-01 13:12:00,839 - INFO - Evaluate candidate [0.00284893 0.08572412] on subset size 5.000000
+2024-08-01 13:12:00,839 - INFO - Configuration achieved a performance of 0.292266 with cost 5.000000
+2024-08-01 13:12:00,839 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:12:00,841 - INFO - Start iteration 36 ... 
+2024-08-01 13:12:02,675 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003562
+2024-08-01 13:12:39,838 - INFO - Optimization overhead was 38.997010 seconds
+2024-08-01 13:12:39,838 - INFO - Evaluate candidate [-0.27166568 -0.54872233] on subset size 4.000000
+2024-08-01 13:12:39,839 - INFO - Configuration achieved a performance of 0.021383 with cost 5.000000
+2024-08-01 13:12:39,839 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 13:12:39,841 - INFO - Start iteration 37 ... 
+2024-08-01 13:12:41,712 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003574
+2024-08-01 13:13:19,176 - INFO - Optimization overhead was 39.334769 seconds
+2024-08-01 13:13:19,176 - INFO - Evaluate candidate [-0.27510897  0.40989217] on subset size 5.000000
+2024-08-01 13:13:19,176 - INFO - Configuration achieved a performance of 0.414652 with cost 5.000000
+2024-08-01 13:13:19,176 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:13:19,179 - INFO - Start iteration 38 ... 
+2024-08-01 13:13:21,027 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003641
+2024-08-01 13:13:59,262 - INFO - Optimization overhead was 40.082642 seconds
+2024-08-01 13:13:59,262 - INFO - Evaluate candidate [-0.30430472  0.1636944 ] on subset size 5.000000
+2024-08-01 13:13:59,262 - INFO - Configuration achieved a performance of 0.234510 with cost 5.000000
+2024-08-01 13:13:59,262 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:13:59,264 - INFO - Start iteration 39 ... 
+2024-08-01 13:14:01,131 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003640
+2024-08-01 13:14:39,936 - INFO - Optimization overhead was 40.671394 seconds
+2024-08-01 13:14:39,936 - INFO - Evaluate candidate [0.24798722 0.34901344] on subset size 5.000000
+2024-08-01 13:14:39,937 - INFO - Configuration achieved a performance of 0.605176 with cost 5.000000
+2024-08-01 13:14:39,937 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 13:14:39,939 - INFO - Start iteration 40 ... 
+2024-08-01 13:14:41,759 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003615
+2024-08-01 13:15:20,618 - INFO - Optimization overhead was 40.679284 seconds
+2024-08-01 13:15:20,618 - INFO - Evaluate candidate [ 0.84499824 -0.24395196] on subset size 5.000000
+2024-08-01 13:15:20,618 - INFO - Configuration achieved a performance of 0.918871 with cost 5.000000
+2024-08-01 13:15:20,618 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:15:20,621 - INFO - Start iteration 41 ... 
+2024-08-01 13:15:22,514 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003582
+2024-08-01 13:16:02,488 - INFO - Optimization overhead was 41.866782 seconds
+2024-08-01 13:16:02,488 - INFO - Evaluate candidate [-0.09811591 -0.11592314] on subset size 5.000000
+2024-08-01 13:16:02,489 - INFO - Configuration achieved a performance of 0.151879 with cost 5.000000
+2024-08-01 13:16:02,489 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 13:16:02,491 - INFO - Start iteration 42 ... 
+2024-08-01 13:16:04,285 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003590
+2024-08-01 13:16:43,476 - INFO - Optimization overhead was 40.984498 seconds
+2024-08-01 13:16:43,476 - INFO - Evaluate candidate [-0.10238199  0.11928341] on subset size 5.000000
+2024-08-01 13:16:43,477 - INFO - Configuration achieved a performance of 0.268816 with cost 5.000000
+2024-08-01 13:16:43,477 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 13:16:43,479 - INFO - Start iteration 43 ... 
+2024-08-01 13:16:45,330 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003679
+2024-08-01 13:17:24,613 - INFO - Optimization overhead was 41.134237 seconds
+2024-08-01 13:17:24,613 - INFO - Evaluate candidate [-0.29236589  0.18874226] on subset size 5.000000
+2024-08-01 13:17:24,614 - INFO - Configuration achieved a performance of 0.239018 with cost 5.000000
+2024-08-01 13:17:24,614 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:17:24,616 - INFO - Start iteration 44 ... 
+2024-08-01 13:17:26,543 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003706
+2024-08-01 13:18:06,455 - INFO - Optimization overhead was 41.838891 seconds
+2024-08-01 13:18:06,455 - INFO - Evaluate candidate [0.91434336 0.19024955] on subset size 5.000000
+2024-08-01 13:18:06,456 - INFO - Configuration achieved a performance of 1.172247 with cost 5.000000
+2024-08-01 13:18:06,456 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:18:06,458 - INFO - Start iteration 45 ... 
+2024-08-01 13:18:08,527 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003698
+2024-08-01 13:18:49,812 - INFO - Optimization overhead was 43.354346 seconds
+2024-08-01 13:18:49,812 - INFO - Evaluate candidate [-0.07904206  0.6353876 ] on subset size 4.000000
+2024-08-01 13:18:49,813 - INFO - Configuration achieved a performance of 0.677871 with cost 5.000000
+2024-08-01 13:18:49,813 - INFO - Evaluation of this configuration took 0.001001 seconds
+2024-08-01 13:18:49,816 - INFO - Start iteration 46 ... 
+2024-08-01 13:18:51,948 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003650
+2024-08-01 13:19:33,486 - INFO - Optimization overhead was 43.670446 seconds
+2024-08-01 13:19:33,486 - INFO - Evaluate candidate [-0.72296555 -0.02785435] on subset size 4.000000
+2024-08-01 13:19:33,486 - INFO - Configuration achieved a performance of 0.128987 with cost 5.000000
+2024-08-01 13:19:33,486 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:19:33,489 - INFO - Start iteration 47 ... 
+2024-08-01 13:19:35,545 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003659
+2024-08-01 13:20:17,211 - INFO - Optimization overhead was 43.721429 seconds
+2024-08-01 13:20:17,211 - INFO - Evaluate candidate [-0.36698051  0.21046493] on subset size 5.000000
+2024-08-01 13:20:17,211 - INFO - Configuration achieved a performance of 0.238021 with cost 5.000000
+2024-08-01 13:20:17,212 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:20:17,214 - INFO - Start iteration 48 ... 
+2024-08-01 13:20:19,156 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003682
+2024-08-01 13:21:00,807 - INFO - Optimization overhead was 43.593630 seconds
+2024-08-01 13:21:00,808 - INFO - Evaluate candidate [-0.25541025  0.05666634] on subset size 5.000000
+2024-08-01 13:21:00,808 - INFO - Configuration achieved a performance of 0.167205 with cost 5.000000
+2024-08-01 13:21:00,808 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:21:00,811 - INFO - Start iteration 49 ... 
+2024-08-01 13:21:02,746 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003697
+2024-08-01 13:21:45,180 - INFO - Optimization overhead was 44.368031 seconds
+2024-08-01 13:21:45,180 - INFO - Evaluate candidate [-0.01522079  0.13902971] on subset size 5.000000
+2024-08-01 13:21:45,180 - INFO - Configuration achieved a performance of 0.311360 with cost 5.000000
+2024-08-01 13:21:45,181 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:21:45,183 - INFO - Start iteration 50 ... 
+2024-08-01 13:21:47,519 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003704
+2024-08-01 13:22:30,316 - INFO - Optimization overhead was 45.133685 seconds
+2024-08-01 13:22:30,317 - INFO - Evaluate candidate [ 0.05059808 -0.23436273] on subset size 5.000000
+2024-08-01 13:22:30,317 - INFO - Configuration achieved a performance of 0.186924 with cost 5.000000
+2024-08-01 13:22:30,317 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:22:30,320 - INFO - Start iteration 51 ... 
+2024-08-01 13:22:32,791 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003705
+2024-08-01 13:23:20,273 - INFO - Optimization overhead was 49.953205 seconds
+2024-08-01 13:23:20,273 - INFO - Evaluate candidate [-0.67296818 -0.50260279] on subset size 4.000000
+2024-08-01 13:23:20,274 - INFO - Configuration achieved a performance of 0.027038 with cost 5.000000
+2024-08-01 13:23:20,274 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 13:23:20,277 - INFO - Start iteration 52 ... 
+2024-08-01 13:23:22,903 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003705
+2024-08-01 13:24:10,094 - INFO - Optimization overhead was 49.816676 seconds
+2024-08-01 13:24:10,094 - INFO - Evaluate candidate [-0.29398168 -0.04755846] on subset size 5.000000
+2024-08-01 13:24:10,094 - INFO - Configuration achieved a performance of 0.106157 with cost 5.000000
+2024-08-01 13:24:10,094 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:24:10,097 - INFO - Start iteration 53 ... 
+2024-08-01 13:24:12,698 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003681
+2024-08-01 13:25:00,077 - INFO - Optimization overhead was 49.980399 seconds
+2024-08-01 13:25:00,077 - INFO - Evaluate candidate [-0.32226779  0.56118837] on subset size 5.000000
+2024-08-01 13:25:00,078 - INFO - Configuration achieved a performance of 0.569747 with cost 5.000000
+2024-08-01 13:25:00,078 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 13:25:00,080 - INFO - Start iteration 54 ... 
+2024-08-01 13:25:02,745 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003706
+2024-08-01 13:25:50,690 - INFO - Optimization overhead was 50.609304 seconds
+2024-08-01 13:25:50,690 - INFO - Evaluate candidate [ 0.15572988 -0.24638125] on subset size 5.000000
+2024-08-01 13:25:50,691 - INFO - Configuration achieved a performance of 0.243898 with cost 5.000000
+2024-08-01 13:25:50,691 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 13:25:50,694 - INFO - Start iteration 55 ... 
+2024-08-01 13:25:53,368 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003715
+2024-08-01 13:26:41,731 - INFO - Optimization overhead was 51.037046 seconds
+2024-08-01 13:26:41,731 - INFO - Evaluate candidate [-0.42092922  0.04820476] on subset size 4.000000
+2024-08-01 13:26:41,731 - INFO - Configuration achieved a performance of 0.130394 with cost 5.000000
+2024-08-01 13:26:41,731 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:26:41,734 - INFO - Start iteration 56 ... 
+2024-08-01 13:26:44,456 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003716
+2024-08-01 13:27:32,934 - INFO - Optimization overhead was 51.199891 seconds
+2024-08-01 13:27:32,934 - INFO - Evaluate candidate [0.0315047  0.28969916] on subset size 4.000000
+2024-08-01 13:27:32,935 - INFO - Configuration achieved a performance of 0.400897 with cost 5.000000
+2024-08-01 13:27:32,935 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 13:27:32,938 - INFO - Start iteration 57 ... 
+2024-08-01 13:27:35,702 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003721
+2024-08-01 13:28:24,787 - INFO - Optimization overhead was 51.849210 seconds
+2024-08-01 13:28:24,787 - INFO - Evaluate candidate [-0.45983403  0.15239319] on subset size 5.000000
+2024-08-01 13:28:24,787 - INFO - Configuration achieved a performance of 0.200392 with cost 5.000000
+2024-08-01 13:28:24,788 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:28:24,790 - INFO - Start iteration 58 ... 
+2024-08-01 13:28:27,538 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003734
+2024-08-01 13:29:16,824 - INFO - Optimization overhead was 52.034477 seconds
+2024-08-01 13:29:16,824 - INFO - Evaluate candidate [-0.50875591  0.28210692] on subset size 5.000000
+2024-08-01 13:29:16,824 - INFO - Configuration achieved a performance of 0.297859 with cost 5.000000
+2024-08-01 13:29:16,824 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:29:16,827 - INFO - Start iteration 59 ... 
+2024-08-01 13:29:19,842 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003732
+2024-08-01 13:30:10,034 - INFO - Optimization overhead was 53.206696 seconds
+2024-08-01 13:30:10,034 - INFO - Evaluate candidate [0.09174026 0.33083191] on subset size 5.000000
+2024-08-01 13:30:10,034 - INFO - Configuration achieved a performance of 0.498193 with cost 5.000000
+2024-08-01 13:30:10,034 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:30:10,037 - INFO - Start iteration 60 ... 
+2024-08-01 13:30:13,080 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003721
+2024-08-01 13:31:04,340 - INFO - Optimization overhead was 54.303360 seconds
+2024-08-01 13:31:04,340 - INFO - Evaluate candidate [0.11536575 0.59320736] on subset size 5.000000
+2024-08-01 13:31:04,341 - INFO - Configuration achieved a performance of 0.762535 with cost 5.000000
+2024-08-01 13:31:04,341 - INFO - Evaluation of this configuration took 0.000999 seconds
+2024-08-01 13:31:04,345 - INFO - Start iteration 61 ... 
+2024-08-01 13:31:07,438 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003719
+2024-08-01 13:31:59,251 - INFO - Optimization overhead was 54.905862 seconds
+2024-08-01 13:31:59,252 - INFO - Evaluate candidate [0.04795603 0.27043582] on subset size 5.000000
+2024-08-01 13:31:59,252 - INFO - Configuration achieved a performance of 0.409264 with cost 5.000000
+2024-08-01 13:31:59,252 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:31:59,255 - INFO - Start iteration 62 ... 
+2024-08-01 13:32:02,333 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003719
+2024-08-01 13:32:54,660 - INFO - Optimization overhead was 55.405090 seconds
+2024-08-01 13:32:54,661 - INFO - Evaluate candidate [-0.13961555  0.21301036] on subset size 5.000000
+2024-08-01 13:32:54,661 - INFO - Configuration achieved a performance of 0.319903 with cost 5.000000
+2024-08-01 13:32:54,661 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:32:54,664 - INFO - Start iteration 63 ... 
+2024-08-01 13:32:57,630 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003740
+2024-08-01 13:33:50,070 - INFO - Optimization overhead was 55.405106 seconds
+2024-08-01 13:33:50,070 - INFO - Evaluate candidate [0.10221674 0.05111921] on subset size 5.000000
+2024-08-01 13:33:50,071 - INFO - Configuration achieved a performance of 0.312789 with cost 5.000000
+2024-08-01 13:33:50,071 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 13:33:50,074 - INFO - Start iteration 64 ... 
+2024-08-01 13:33:53,107 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003731
+2024-08-01 13:34:45,869 - INFO - Optimization overhead was 55.795125 seconds
+2024-08-01 13:34:45,870 - INFO - Evaluate candidate [ 0.05161939 -0.35687738] on subset size 5.000000
+2024-08-01 13:34:45,870 - INFO - Configuration achieved a performance of 0.161430 with cost 5.000000
+2024-08-01 13:34:45,870 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:34:45,873 - INFO - Start iteration 65 ... 
+2024-08-01 13:34:48,891 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003742
+2024-08-01 13:35:41,717 - INFO - Optimization overhead was 55.844248 seconds
+2024-08-01 13:35:41,717 - INFO - Evaluate candidate [-0.4507466  -0.04765897] on subset size 5.000000
+2024-08-01 13:35:41,718 - INFO - Configuration achieved a performance of 0.095959 with cost 5.000000
+2024-08-01 13:35:41,718 - INFO - Evaluation of this configuration took 0.001000 seconds
+2024-08-01 13:35:41,721 - INFO - Start iteration 66 ... 
+2024-08-01 13:35:44,733 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003749
+2024-08-01 13:36:38,062 - INFO - Optimization overhead was 56.341351 seconds
+2024-08-01 13:36:38,062 - INFO - Evaluate candidate [-0.64094073 -0.20333752] on subset size 2.000000
+2024-08-01 13:36:38,063 - INFO - Configuration achieved a performance of 0.072514 with cost 1.000000
+2024-08-01 13:36:38,063 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:36:38,066 - INFO - Start iteration 67 ... 
+2024-08-01 13:36:41,381 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003762
+2024-08-01 13:37:34,796 - INFO - Optimization overhead was 56.729770 seconds
+2024-08-01 13:37:34,796 - INFO - Evaluate candidate [-0.18240225  0.33524695] on subset size 5.000000
+2024-08-01 13:37:34,796 - INFO - Configuration achieved a performance of 0.386999 with cost 5.000000
+2024-08-01 13:37:34,797 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:37:34,800 - INFO - Start iteration 68 ... 
+2024-08-01 13:37:38,103 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003760
+2024-08-01 13:38:32,241 - INFO - Optimization overhead was 57.441207 seconds
+2024-08-01 13:38:32,241 - INFO - Evaluate candidate [ 0.23374908 -0.66720181] on subset size 2.000000
+2024-08-01 13:38:32,241 - INFO - Configuration achieved a performance of 0.206302 with cost 1.000000
+2024-08-01 13:38:32,242 - INFO - Evaluation of this configuration took 0.000000 seconds
+2024-08-01 13:38:32,245 - INFO - Start iteration 69 ... 
+2024-08-01 13:38:35,493 - INFO - Current incumbent [0.00284893 0.08572412 1.        ] with estimated performance 1.003797

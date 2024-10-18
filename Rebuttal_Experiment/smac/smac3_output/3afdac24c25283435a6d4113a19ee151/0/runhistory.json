@@ -1,0 +1,2013 @@
+{
+  "stats": {
+    "submitted": 100,
+    "finished": 100,
+    "running": 0
+  },
+  "data": [
+    [
+      1,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.3237278,
+      1721822043.3261461,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      2,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.33098,
+      1721822043.33248,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      3,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.337079,
+      1721822043.338466,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      4,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.3431292,
+      1721822043.344314,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      5,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.348832,
+      1721822043.3498821,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      6,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.35463,
+      1721822043.355734,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      7,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.360595,
+      1721822043.361599,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      8,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.366538,
+      1721822043.367517,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      9,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.372759,
+      1721822043.373682,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      10,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.3789499,
+      1721822043.379859,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      11,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.385203,
+      1721822043.386105,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      12,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.392307,
+      1721822043.39324,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      13,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.3990688,
+      1721822043.3999271,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      14,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.406244,
+      1721822043.4071062,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      15,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.413648,
+      1721822043.4145322,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      16,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.421508,
+      1721822043.422382,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      17,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.429782,
+      1721822043.43069,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      18,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.43853,
+      1721822043.4394581,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      19,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.447444,
+      1721822043.4483268,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      20,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.456602,
+      1721822043.457458,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      21,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.800312,
+      1721822043.801295,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      22,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.8106391,
+      1721822043.811528,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      23,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.821078,
+      1721822043.821964,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      24,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.832394,
+      1721822043.833281,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      25,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.843531,
+      1721822043.844416,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      26,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.8550148,
+      1721822043.85587,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      27,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.866712,
+      1721822043.867666,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      28,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822043.878664,
+      1721822043.879526,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      29,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.198708,
+      1721822044.1996958,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      30,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.2117178,
+      1721822044.2126138,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      31,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.2243001,
+      1721822044.22517,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      32,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.2372859,
+      1721822044.238176,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      33,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.251162,
+      1721822044.252102,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      34,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.2649841,
+      1721822044.265863,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      35,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.278993,
+      1721822044.279904,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      36,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.2934148,
+      1721822044.294301,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      37,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.313529,
+      1721822044.314414,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      38,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.70104,
+      1721822044.702014,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      39,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.716983,
+      1721822044.717976,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      40,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.732935,
+      1721822044.7338681,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      41,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.7492712,
+      1721822044.750219,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      42,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.765512,
+      1721822044.766398,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      43,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.7818508,
+      1721822044.7827048,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      44,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.798517,
+      1721822044.7993789,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      45,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822044.822311,
+      1721822044.823248,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      46,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.1948001,
+      1721822045.1957262,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      47,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.21287,
+      1721822045.213784,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      48,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.231086,
+      1721822045.231966,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      49,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.2494268,
+      1721822045.25036,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      50,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.268076,
+      1721822045.268971,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      51,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.286918,
+      1721822045.287783,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      52,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.306276,
+      1721822045.3071392,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      53,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.726811,
+      1721822045.727851,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      54,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.7474701,
+      1721822045.748439,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      55,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.76811,
+      1721822045.769024,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      56,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.788691,
+      1721822045.7895849,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      57,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.8099022,
+      1721822045.810843,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      58,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.831216,
+      1721822045.832119,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      59,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.853021,
+      1721822045.853923,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      60,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822045.874938,
+      1721822045.875941,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      61,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822046.36361,
+      1721822046.3645701,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      62,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822046.386754,
+      1721822046.387684,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      63,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822046.409746,
+      1721822046.410641,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      64,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822046.433024,
+      1721822046.433985,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      65,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822046.456479,
+      1721822046.457367,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      66,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822046.480117,
+      1721822046.480992,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      67,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822046.503896,
+      1721822046.5047638,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      68,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822046.52796,
+      1721822046.528919,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      69,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.0210419,
+      1721822047.0219798,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      70,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.0469382,
+      1721822047.0478988,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      71,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.07292,
+      1721822047.073813,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      72,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.098696,
+      1721822047.099607,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      73,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.124542,
+      1721822047.12545,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      74,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.15066,
+      1721822047.151546,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      75,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.1774049,
+      1721822047.1782742,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      76,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.204062,
+      1721822047.2049658,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      77,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.732492,
+      1721822047.73354,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      78,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.76062,
+      1721822047.761565,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      79,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.788279,
+      1721822047.78914,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      80,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.815918,
+      1721822047.816787,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      81,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.843887,
+      1721822047.844769,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      82,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.8723378,
+      1721822047.87324,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      83,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.9018528,
+      1721822047.902853,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      84,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.932312,
+      1721822047.9332511,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      85,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822047.975776,
+      1721822047.976773,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      86,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822048.525841,
+      1721822048.526885,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      87,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822048.5576808,
+      1721822048.558764,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      88,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822048.5899441,
+      1721822048.5908952,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      89,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822048.6208918,
+      1721822048.621783,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      90,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822048.652131,
+      1721822048.6530712,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      91,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822048.6835961,
+      1721822048.684501,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      92,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822048.715225,
+      1721822048.716097,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      93,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822049.329587,
+      1721822049.330524,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      94,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822049.363358,
+      1721822049.364288,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      95,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822049.397208,
+      1721822049.3980942,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      96,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822049.430592,
+      1721822049.431496,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      97,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822049.464735,
+      1721822049.4656918,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      98,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822049.498761,
+      1721822049.499663,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      99,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822049.540145,
+      1721822049.54107,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ],
+    [
+      100,
+      null,
+      209652396,
+      null,
+      Infinity,
+      0.0,
+      2,
+      1721822049.574614,
+      1721822049.575545,
+      {
+        "traceback": "Traceback (most recent call last):\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 186, in run\n    rval = self(config_copy, target_function, kwargs)\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/smac/runner/target_function_runner.py\", line 259, in __call__\n    return algorithm(config, **algorithm_kwargs)\n  File \"/Users/yuxinwang/Desktop/smac/smac_demo.py\", line 50, in train\n    x = config[\"x\"]\n  File \"/Users/yuxinwang/anaconda3/envs/SMAC/lib/python3.10/site-packages/ConfigSpace/configuration.py\", line 231, in __getitem__\n    raise KeyError(key)\nKeyError: 'x'\n",
+        "error": "KeyError('x')"
+      }
+    ]
+  ],
+  "configs": {
+    "1": {
+      "s": 0.2668785210699,
+      "x1": 0.9308470431715
+    },
+    "2": {
+      "s": 0.6341031137854,
+      "x1": 0.3194977585226
+    },
+    "3": {
+      "s": 0.8783407658339,
+      "x1": 1.2037812829949
+    },
+    "4": {
+      "s": 0.0267984084785,
+      "x1": 0.5927184582688
+    },
+    "5": {
+      "s": 0.2437662715092,
+      "x1": 1.395078335423
+    },
+    "6": {
+      "s": 0.8452418493107,
+      "x1": 0.4119333964773
+    },
+    "7": {
+      "s": 0.6052189609036,
+      "x1": 1.111649505794
+    },
+    "8": {
+      "s": 0.4879314480349,
+      "x1": 0.1282417103648
+    },
+    "9": {
+      "s": 0.4273283528164,
+      "x1": 1.2804647572339
+    },
+    "10": {
+      "s": 0.5444921487942,
+      "x1": 0.67277758196
+    },
+    "11": {
+      "s": 0.7887832103297,
+      "x1": 0.8036278788932
+    },
+    "12": {
+      "s": 0.1871795793995,
+      "x1": 0.1962271635421
+    },
+    "13": {
+      "s": 0.0910676661879,
+      "x1": 0.9976257481612
+    },
+    "14": {
+      "s": 0.9427265878767,
+      "x1": 0.0122835435905
+    },
+    "15": {
+      "s": 0.7025282196701,
+      "x1": 1.4644258003682
+    },
+    "16": {
+      "s": 0.3354235738516,
+      "x1": 0.478820739314
+    },
+    "17": {
+      "s": 0.3660388812423,
+      "x1": 1.4063910003752
+    },
+    "18": {
+      "s": 0.7331854738295,
+      "x1": 0.517740285024
+    },
+    "19": {
+      "s": 0.9735784064978,
+      "x1": 0.9589572572149
+    },
+    "20": {
+      "s": 0.1219919491559,
+      "x1": 0.070020081941
+    },
+    "21": {
+      "s": 0.1723035838891,
+      "x1": 1.2445329536158
+    },
+    "22": {
+      "s": 0.9418992633056,
+      "x1": 0.1848474652831
+    },
+    "23": {
+      "s": 0.9170090199448,
+      "x1": 0.2591189645719
+    },
+    "24": {
+      "s": 0.0507262834326,
+      "x1": 1.3636201408867
+    },
+    "25": {
+      "s": 0.6475466374358,
+      "x1": 1.3726786531898
+    },
+    "26": {
+      "s": 0.1799963544787,
+      "x1": 0.5928417383806
+    },
+    "27": {
+      "s": 0.5734588278543,
+      "x1": 1.344413992943
+    },
+    "28": {
+      "s": 0.3887566644169,
+      "x1": 1.1173326430864
+    },
+    "29": {
+      "s": 0.5521781109132,
+      "x1": 0.5473242361528
+    },
+    "30": {
+      "s": 0.2835850995789,
+      "x1": 0.3449696524592
+    },
+    "31": {
+      "s": 0.9417620716374,
+      "x1": 0.9505549474388
+    },
+    "32": {
+      "s": 0.303327667021,
+      "x1": 0.6667829240887
+    },
+    "33": {
+      "s": 0.5367198328172,
+      "x1": 0.1639543921898
+    },
+    "34": {
+      "s": 0.6898972017975,
+      "x1": 0.4121947028105
+    },
+    "35": {
+      "s": 0.3692563237617,
+      "x1": 0.1252466628213
+    },
+    "36": {
+      "s": 0.5860606325965,
+      "x1": 0.2097202749772
+    },
+    "37": {
+      "s": 0.5601941613663,
+      "x1": 0.4542222274443
+    },
+    "38": {
+      "s": 0.6733561721755,
+      "x1": 0.3885723993014
+    },
+    "39": {
+      "s": 0.454460772808,
+      "x1": 0.778558977222
+    },
+    "40": {
+      "s": 0.2859990343044,
+      "x1": 0.9641757766176
+    },
+    "41": {
+      "s": 0.5232712009811,
+      "x1": 0.0696635514028
+    },
+    "42": {
+      "s": 0.1877666400496,
+      "x1": 0.8310018227695
+    },
+    "43": {
+      "s": 0.1315419339956,
+      "x1": 0.7781096239584
+    },
+    "44": {
+      "s": 0.102008066299,
+      "x1": 1.3746118798242
+    },
+    "45": {
+      "s": 0.288938513957,
+      "x1": 1.3408313428267
+    },
+    "46": {
+      "s": 0.554253896062,
+      "x1": 0.4388093119348
+    },
+    "47": {
+      "s": 0.4577086417834,
+      "x1": 0.4196978095678
+    },
+    "48": {
+      "s": 0.4336469355795,
+      "x1": 1.029226302191
+    },
+    "49": {
+      "s": 0.4542549453648,
+      "x1": 0.1716798155622
+    },
+    "50": {
+      "s": 0.1076315166129,
+      "x1": 1.1370302413057
+    },
+    "51": {
+      "s": 0.0371491304193,
+      "x1": 1.3601420438886
+    },
+    "52": {
+      "s": 0.1114101314489,
+      "x1": 1.0090702985488
+    },
+    "53": {
+      "s": 0.2385402803913,
+      "x1": 0.9430717312532
+    },
+    "54": {
+      "s": 0.1111472478355,
+      "x1": 0.6833690269931
+    },
+    "55": {
+      "s": 0.8413542940804,
+      "x1": 1.0157236890648
+    },
+    "56": {
+      "s": 0.2654524659371,
+      "x1": 1.1064349102586
+    },
+    "57": {
+      "s": 0.4465875639205,
+      "x1": 0.5229355344252
+    },
+    "58": {
+      "s": 0.8962283606154,
+      "x1": 1.2707300244057
+    },
+    "59": {
+      "s": 0.3914591278778,
+      "x1": 0.308586748841
+    },
+    "60": {
+      "s": 0.6916612230553,
+      "x1": 1.4511044988242
+    },
+    "61": {
+      "s": 0.1851427886117,
+      "x1": 1.1310606672339
+    },
+    "62": {
+      "s": 0.731649035854,
+      "x1": 1.3823458446652
+    },
+    "63": {
+      "s": 0.9110904848439,
+      "x1": 0.5104404769679
+    },
+    "64": {
+      "s": 0.9619020815987,
+      "x1": 0.2074675463815
+    },
+    "65": {
+      "s": 0.7325143779937,
+      "x1": 0.0208401329482
+    },
+    "66": {
+      "s": 0.0058794899396,
+      "x1": 0.9277341997501
+    },
+    "67": {
+      "s": 0.6553546357975,
+      "x1": 0.4842453097202
+    },
+    "68": {
+      "s": 0.2134376004662,
+      "x1": 1.2329614054319
+    },
+    "69": {
+      "s": 0.3022852680307,
+      "x1": 0.054472115946
+    },
+    "70": {
+      "s": 0.4738857464494,
+      "x1": 0.9140973629464
+    },
+    "71": {
+      "s": 0.1297543317471,
+      "x1": 0.8786242247135
+    },
+    "72": {
+      "s": 0.6734856837229,
+      "x1": 1.3934862199106
+    },
+    "73": {
+      "s": 0.9427798357274,
+      "x1": 1.210072291478
+    },
+    "74": {
+      "s": 0.2735370724464,
+      "x1": 1.0139524193395
+    },
+    "75": {
+      "s": 0.5779734403258,
+      "x1": 0.4085627455902
+    },
+    "76": {
+      "s": 0.4247370067672,
+      "x1": 0.6738704455205
+    },
+    "77": {
+      "s": 0.2305608922864,
+      "x1": 1.3633342408477
+    },
+    "78": {
+      "s": 0.9669488872845,
+      "x1": 1.4524549940551
+    },
+    "79": {
+      "s": 0.1565213879914,
+      "x1": 1.1150233043694
+    },
+    "80": {
+      "s": 0.627992622678,
+      "x1": 0.366537028763
+    },
+    "81": {
+      "s": 0.5974108722771,
+      "x1": 0.120659315744
+    },
+    "82": {
+      "s": 0.0004341560302,
+      "x1": 1.3810991069391
+    },
+    "83": {
+      "s": 0.870892279462,
+      "x1": 1.0502937140567
+    },
+    "84": {
+      "s": 0.6577453592228,
+      "x1": 0.2845797071547
+    },
+    "85": {
+      "s": 0.2145308071292,
+      "x1": 0.0013276577057
+    },
+    "86": {
+      "s": 0.1185631023284,
+      "x1": 0.9280726099349
+    },
+    "87": {
+      "s": 0.4755191855525,
+      "x1": 0.1056260248513
+    },
+    "88": {
+      "s": 0.6694588060717,
+      "x1": 0.2874493644986
+    },
+    "89": {
+      "s": 0.7317705592755,
+      "x1": 0.6167958955465
+    },
+    "90": {
+      "s": 0.2065041893467,
+      "x1": 1.2359356829401
+    },
+    "91": {
+      "s": 0.7032058789757,
+      "x1": 1.4026131218025
+    },
+    "92": {
+      "s": 0.2871871430177,
+      "x1": 1.0688007777724
+    },
+    "93": {
+      "s": 0.1307670659056,
+      "x1": 1.3073614909465
+    },
+    "94": {
+      "s": 0.9689702802184,
+      "x1": 0.1456317231891
+    },
+    "95": {
+      "s": 0.5116322166331,
+      "x1": 0.5078021544479
+    },
+    "96": {
+      "s": 0.9406885545868,
+      "x1": 0.013108928926
+    },
+    "97": {
+      "s": 0.909442458899,
+      "x1": 1.2091799686032
+    },
+    "98": {
+      "s": 0.9840665776034,
+      "x1": 0.0035915559473
+    },
+    "99": {
+      "s": 0.1708516941212,
+      "x1": 0.716953676748
+    },
+    "100": {
+      "s": 0.7118629420132,
+      "x1": 1.0453706092408
+    }
+  },
+  "config_origins": {
+    "1": "Initial Design: Sobol",
+    "2": "Initial Design: Sobol",
+    "3": "Initial Design: Sobol",
+    "4": "Initial Design: Sobol",
+    "5": "Initial Design: Sobol",
+    "6": "Initial Design: Sobol",
+    "7": "Initial Design: Sobol",
+    "8": "Initial Design: Sobol",
+    "9": "Initial Design: Sobol",
+    "10": "Initial Design: Sobol",
+    "11": "Initial Design: Sobol",
+    "12": "Initial Design: Sobol",
+    "13": "Initial Design: Sobol",
+    "14": "Initial Design: Sobol",
+    "15": "Initial Design: Sobol",
+    "16": "Initial Design: Sobol",
+    "17": "Initial Design: Sobol",
+    "18": "Initial Design: Sobol",
+    "19": "Initial Design: Sobol",
+    "20": "Initial Design: Sobol",
+    "21": "Acquisition Function Maximizer: Local Search",
+    "22": "Acquisition Function Maximizer: Local Search",
+    "23": "Acquisition Function Maximizer: Local Search",
+    "24": "Acquisition Function Maximizer: Local Search",
+    "25": "Acquisition Function Maximizer: Local Search",
+    "26": "Acquisition Function Maximizer: Local Search",
+    "27": "Acquisition Function Maximizer: Local Search",
+    "28": "Acquisition Function Maximizer: Local Search",
+    "29": "Acquisition Function Maximizer: Local Search",
+    "30": "Acquisition Function Maximizer: Local Search",
+    "31": "Acquisition Function Maximizer: Local Search",
+    "32": "Acquisition Function Maximizer: Local Search",
+    "33": "Acquisition Function Maximizer: Local Search",
+    "34": "Acquisition Function Maximizer: Local Search",
+    "35": "Random Search",
+    "36": "Random Search",
+    "37": "Random Search",
+    "38": "Acquisition Function Maximizer: Local Search",
+    "39": "Acquisition Function Maximizer: Local Search",
+    "40": "Acquisition Function Maximizer: Local Search",
+    "41": "Acquisition Function Maximizer: Local Search",
+    "42": "Acquisition Function Maximizer: Local Search",
+    "43": "Acquisition Function Maximizer: Local Search",
+    "44": "Acquisition Function Maximizer: Local Search",
+    "45": "Random Search",
+    "46": "Acquisition Function Maximizer: Local Search",
+    "47": "Random Search",
+    "48": "Acquisition Function Maximizer: Local Search",
+    "49": "Acquisition Function Maximizer: Local Search",
+    "50": "Acquisition Function Maximizer: Local Search",
+    "51": "Acquisition Function Maximizer: Local Search",
+    "52": "Acquisition Function Maximizer: Local Search",
+    "53": "Acquisition Function Maximizer: Local Search",
+    "54": "Acquisition Function Maximizer: Local Search",
+    "55": "Random Search",
+    "56": "Acquisition Function Maximizer: Local Search",
+    "57": "Acquisition Function Maximizer: Local Search",
+    "58": "Acquisition Function Maximizer: Local Search",
+    "59": "Acquisition Function Maximizer: Local Search",
+    "60": "Acquisition Function Maximizer: Local Search",
+    "61": "Acquisition Function Maximizer: Local Search",
+    "62": "Acquisition Function Maximizer: Local Search",
+    "63": "Acquisition Function Maximizer: Local Search",
+    "64": "Random Search",
+    "65": "Acquisition Function Maximizer: Local Search",
+    "66": "Acquisition Function Maximizer: Local Search",
+    "67": "Acquisition Function Maximizer: Local Search",
+    "68": "Random Search",
+    "69": "Acquisition Function Maximizer: Local Search",
+    "70": "Acquisition Function Maximizer: Local Search",
+    "71": "Acquisition Function Maximizer: Local Search",
+    "72": "Acquisition Function Maximizer: Local Search",
+    "73": "Acquisition Function Maximizer: Local Search",
+    "74": "Random Search",
+    "75": "Acquisition Function Maximizer: Local Search",
+    "76": "Random Search",
+    "77": "Acquisition Function Maximizer: Local Search",
+    "78": "Acquisition Function Maximizer: Local Search",
+    "79": "Acquisition Function Maximizer: Local Search",
+    "80": "Acquisition Function Maximizer: Local Search",
+    "81": "Random Search",
+    "82": "Random Search",
+    "83": "Acquisition Function Maximizer: Local Search",
+    "84": "Random Search",
+    "85": "Random Search",
+    "86": "Acquisition Function Maximizer: Local Search",
+    "87": "Acquisition Function Maximizer: Local Search",
+    "88": "Random Search",
+    "89": "Acquisition Function Maximizer: Local Search",
+    "90": "Random Search",
+    "91": "Acquisition Function Maximizer: Local Search",
+    "92": "Acquisition Function Maximizer: Local Search",
+    "93": "Acquisition Function Maximizer: Local Search",
+    "94": "Acquisition Function Maximizer: Local Search",
+    "95": "Acquisition Function Maximizer: Local Search",
+    "96": "Random Search",
+    "97": "Acquisition Function Maximizer: Local Search",
+    "98": "Random Search",
+    "99": "Acquisition Function Maximizer: Local Search",
+    "100": "Random Search"
+  }
+}

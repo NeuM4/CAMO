@@ -108,5 +108,5 @@ class non_linear_sin():
 
 if __name__ == "__main__":
     data = non_linear_sin('pow_10', 2)
-    max,_ = data.find_max_value_in_range()
+    max,_ = data.find_max_value_in_range()#max:0.03338
     pass

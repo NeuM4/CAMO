@@ -106,6 +106,6 @@ class forrester():
 
 if __name__ == "__main__":
     data = forrester('pow_10', 2)
-    max,_ = data.find_max_value_in_range()
+    max,_ = data.find_max_value_in_range()#max=48.4495
     pass
     

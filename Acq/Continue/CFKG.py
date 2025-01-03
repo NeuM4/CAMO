@@ -4,12 +4,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..
 import torch.nn as nn
 import torch
 from FidelityFusion_Models.GP_DMF import *
+from FidelityFusion_Models.GP_dkl import *
 from FidelityFusion_Models.CMF_CAR import *
 from FidelityFusion_Models.CMF_CAR_dkl import *
-from FidelityFusion_Models.CMF_CAR_dkl_s import *
-from FidelityFusion_Models.CMF_CAR_dkl_s_tr import *
 
-MF_model_list = {'CMF_CAR': ContinuousAutoRegression_large, 'CMF_CAR_dkl': CMF_CAR_dkl, "GP": cigp, "CMF_CAR_dkl_s": CMF_CAR_dkl_s,'CMF_CAR_dkl_s_tr': CMF_CAR_dkl_s_tr}
+
+MF_model_list = {'CMF_CAR': ContinuousAutoRegression_large, 'CMF_CAR_dkl': CMF_CAR_dkl, "GP": cigp,"GP_dkl": cigp_dkl}
 
 class continuous_fidelity_knowledgement_gradient(nn.Module):
     def __init__(self, x_dimension, posterior_function, data_model, model_cost, data_manager, seed, search_range,norm,model_name):
@@ -29,16 +29,14 @@ class continuous_fidelity_knowledgement_gradient(nn.Module):
     def negative_cfkg(self, x, s):
         
         _, x_te = self.data_model.find_max_value_in_range()
-        # xte = torch.cat((x_te,torch.ones(100).reshape(-1,1)),dim = 1)
         xte = x_te[:100].double()
 
         with torch.no_grad():
             xte = self.x_norm.normalize(xte)
-            mean_y, _ = self.pre_func(self.data_manager, xte, torch.ones(100).reshape(-1,1)*2)  # 预测最高精度
+            mean_y, _ = self.pre_func(self.data_manager, xte, torch.ones(100).reshape(-1,1)*2)  # 预测最高精�?
             mean_y = self.y_norm.denormalize(mean_y)
         max_mean_y = torch.max(mean_y)
         
-        # y = torch.tensor(self.data_model.get_data(x, s))
         with torch.no_grad():
             x1 = self.x_norm.normalize(x)
             y, var = self.pre_func(self.data_manager, x1, s+1)
@@ -57,15 +55,12 @@ class continuous_fidelity_knowledgement_gradient(nn.Module):
         elif self.model_name == "GP":
             GP_new = MF_model_list['GP'](kernel = kernel_init, log_beta=1.0)
             train_GP(GP_new, self.data_manager, max_iter=100, lr_init=1e-2)
+        elif self.model_name == "GP_dkl":
+            GP_new = MF_model_list['GP_dkl'](input_dim=x.shape[1],kernel = kernel_init, log_beta=1.0)
+            train_GPdkl(GP_new, self.data_manager, max_iter=100, lr_init=1e-2)
         elif self.model_name == "CMF_CAR_dkl":
             GP_new = MF_model_list['CMF_CAR_dkl'](input_dim=x.shape[1]-1, kernel_x = kernel_init)
             train_CMFCAR_dkl(GP_new, self.data_manager, max_iter=100, lr_init=1e-2)
-        # elif self.model_name == "CMF_CAR_dkl_s":
-        #     GP_new = MF_model_list['CMF_CAR_dkl_s'](kernel_x = kernel_init)
-        #     train_CMFCAR_dkl_s(GP_new, self.data_manager, max_iter=100, lr_init=1e-2)
-        # elif self.model_name == "CMF_CAR_dkl_s_tr":
-        #     GP_new = MF_model_list['CMF_CAR_dkl_s_tr'](kernel_x = kernel_init)
-        #     train_CMFCAR_dkl_s_tr(GP_new, self.data_manager, max_iter=100, lr_init=1e-2)
         
         with torch.no_grad():
             xte = self.x_norm.normalize(xte)

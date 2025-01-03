@@ -101,5 +101,5 @@ class Currin():
 if __name__ == '__main__':
     # test
     currin = Currin('pow_10')
-    max_value, _ = currin.find_max_value_in_range()
+    max_value, _ = currin.find_max_value_in_range()##max:13.798
     pass

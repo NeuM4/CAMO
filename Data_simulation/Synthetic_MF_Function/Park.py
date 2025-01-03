@@ -113,5 +113,5 @@ class Park():
     
 if __name__ == '__main__':
     park = Park('pow_10')
-    max_value, _ = park.find_max_value_in_range()
+    max_value, _ = park.find_max_value_in_range()##max=2.1745
     pass

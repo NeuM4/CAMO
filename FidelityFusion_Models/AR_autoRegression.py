@@ -6,40 +6,12 @@ import torch.nn as nn
 import GaussianProcess.kernel as kernel
 from GaussianProcess.cigp_v10 import cigp as GPR
 from FidelityFusion_Models.MF_data import MultiFidelityDataManager
-# from Experiments.log_debugger import log_debugger
 import matplotlib.pyplot as plt
 
 class AR(nn.Module):
-    """
-    AutoRegression model for fidelity fusion.
-
-    Args:
-        fidelity_num (int): Number of fidelity levels.
-        kernel_list (list): List of kernels for each fidelity level.
-        rho_init (float, optional): Initial value for rho. Defaults to 1.0.
-        if_nonsubset (bool, optional): Flag indicating if non-subset training is used. Defaults to False.
-
-    Attributes:
-        gpr_list (torch.nn.ModuleList): List of Gaussian Process Regression models for each fidelity level.
-        rho_list (torch.nn.ParameterList): List of rho parameters for each fidelity level.
-        if_nonsubset (bool): Flag indicating if non-subset training is used.
-
-    Methods:
-        forward(data_manager, x_test, to_fidelity=None): Forward pass of the model.
-
-    """
 
     def __init__(self, fidelity_num, kernel_list, rho_init=1.0, if_nonsubset=False):
-        """
-        Initialize the AR model.
-
-        Args:
-            fidelity_num (int): Number of fidelity levels.
-            kernel_list (list): List of kernels for each fidelity level.
-            rho_init (float, optional): Initial value for rho. Defaults to 1.0.
-            if_nonsubset (bool, optional): Flag indicating if non-subset training is used. Defaults to False.
-
-        """
+        
         super().__init__()
         self.fidelity_num = fidelity_num
         self.gpr_list = []
@@ -54,19 +26,7 @@ class AR(nn.Module):
         self.if_nonsubset = if_nonsubset
 
     def forward(self, data_manager, x_test, to_fidelity=None, normal=True):
-        """
-        Forward pass of the AR model.
-
-        Args:
-            data_manager (DataManager): Data manager object.
-            x_test (torch.Tensor): Input tensor for prediction.
-            to_fidelity (int, optional): Fidelity level to predict. Defaults to None.
-
-        Returns:
-            y_pred_high (torch.Tensor): Predicted output at the highest fidelity level.
-            cov_pred_high (torch.Tensor): Covariance of the predicted output at the highest fidelity level.
-
-        """
+        
         if to_fidelity is not None:
             fidelity_level = to_fidelity
         else:
@@ -90,16 +50,7 @@ class AR(nn.Module):
 #train_gp
     
 def train_AR(ARmodel, data_manager, max_iter=1000, lr_init=1e-1, normal= True, debugger=None):
-    """
-    Trains an auto-regression model using the specified ARmodel and data_manager.
-
-    Args:
-        ARmodel (AutoRegressionModel): The auto-regression model to train.
-        data_manager (DataManager): The data manager object that provides the training data.
-        max_iter (int, optional): The maximum number of iterations for training. Defaults to 1000.
-        lr_init (float, optional): The initial learning rate for the optimizer. Defaults to 0.1.
-        debugger (Debugger, optional): The debugger object for monitoring the training process. Defaults to None.
-    """
+    
     for i_fidelity in range(ARmodel.fidelity_num):
         optimizer = torch.optim.Adam(ARmodel.parameters(), lr=lr_init)
         if i_fidelity == 0:
@@ -111,7 +62,6 @@ def train_AR(ARmodel, data_manager, max_iter=1000, lr_init=1e-1, normal= True, d
                     debugger.get_status(ARmodel, optimizer, i, loss)
                 loss.backward()
                 optimizer.step()
-                # print('fidelity:', i_fidelity, 'iter', i, 'nll:{:.5f}'.format(loss.item()))
                 print('fidelity {}, epoch {}/{}, nll: {}'.format(i_fidelity, i+1, max_iter, loss.item()), end='\r')
             print('')
         else:
@@ -137,7 +87,6 @@ def train_AR(ARmodel, data_manager, max_iter=1000, lr_init=1e-1, normal= True, d
                     debugger.get_status(ARmodel, optimizer, i, loss)
                 loss.backward()
                 optimizer.step()
-                # print('fidelity:', i_fidelity, 'iter', i, 'rho', ARmodel.rho_list[i_fidelity - 1].item(), 'nll:{:.5f}'.format(loss.item()))
                 print('fidelity {}, epoch {}/{},rho {}, nll: {}'.format(i_fidelity, i+1, max_iter, ARmodel.rho_list[i_fidelity - 1].item(), loss.item()), end='\r')
             print('')
             
@@ -145,8 +94,8 @@ def train_AR(ARmodel, data_manager, max_iter=1000, lr_init=1e-1, normal= True, d
 if __name__ == "__main__":
 
     torch.manual_seed(1)
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    # debugger=log_debugger("AR")
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cpu")
 
     # generate the data
     x_all = torch.rand(500, 1) * 20
@@ -180,7 +129,6 @@ if __name__ == "__main__":
     ## if nonsubset is False, max_iter should be 100 ,lr can be 1e-2
     train_AR(myAR, fidelity_manager, max_iter=200, lr_init=1e-2, debugger = None)
 
-    # debugger.logger.info('training finished,start predicting')
     with torch.no_grad():
         x_test = fidelity_manager.normalizelayer[myAR.fidelity_num-1].normalize_x(x_test)
         ypred, ypred_var = myAR(fidelity_manager,x_test)

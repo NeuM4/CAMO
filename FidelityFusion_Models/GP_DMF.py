@@ -6,8 +6,9 @@ import torch.nn as nn
 import GaussianProcess.kernel as kernel
 from matplotlib import pyplot as plt
 import time as time
+from FidelityFusion_Models.MF_data import MultiFidelityDataManager
 
-print(torch.__version__)
+# print(torch.__version__)
 # I use torch (1.11.0) for this work. lower version may not work.
 
 JITTER = 1e-6
@@ -85,109 +86,64 @@ def train_GP(GPmodel, data_manager, max_iter=100, lr_init=1e-1, normal = False):
 
 if __name__ == "__main__":
 
-    # single output test 1
-    xte = torch.linspace(0, 6, 100).view(-1, 1)
-    yte = torch.sin(xte) + 10
+    torch.manual_seed(1)
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cpu")
 
-    xtr = torch.rand(16, 1) * 6
-    ytr = torch.sin(xtr) + torch.randn(16, 1) * 0.5 + 10
+    # generate the data
+    x = []
+    y = []
+    x_all = torch.rand(500, 1) * 20
+    xlow_indices = torch.randperm(500)[:300]
+    xlow_indices = torch.sort(xlow_indices).values
+    x_low = x_all[xlow_indices]
+    x.append(torch.cat((x_low, torch.full((x_low.shape[0], 1), 1)), dim=1))
 
-    kernel1 = kernel.SumKernel(kernel.LinearKernel(1), kernel.MaternKernel(1))
-    model = cigp(kernel = kernel1, log_beta = 1.0)
-    optimizer = torch.optim.Adam(model.parameters(), lr = 1e-1)
+    xhigh1_indices = torch.randperm(500)[:300]
+    xhigh1_indices = torch.sort(xhigh1_indices).values
+    x_high1 = x_all[xhigh1_indices]
+    x.append(torch.cat((x_high1, torch.full((x_high1.shape[0], 1), 2)), dim=1))
+
+    xhigh2_indices = torch.randperm(500)[:250]
+    xhigh2_indices = torch.sort(xhigh2_indices).values
+    x_high2 = x_all[xhigh2_indices]
+    x.append(torch.cat((x_high2, torch.full((x_high2.shape[0], 1), 3)), dim=1))
+
+    x_test = torch.linspace(0, 20, 100).reshape(-1, 1)
+    y_test = torch.sin(x_test)
+    x_test = torch.cat((x_test, torch.full((x_test.shape[0], 1), 3)), dim=1)
+
+    y_low = torch.sin(x_low) - 0.5 * torch.sin(2 * x_low) + torch.rand(300, 1) * 0.1 - 0.05
+    y.append(y_low)
+    y_high1 = torch.sin(x_high1) - 0.3 * torch.sin(2 * x_high1) + torch.rand(300, 1) * 0.1 - 0.05
+    y.append(y_high1)
+    y_high2 = torch.sin(x_high2) + torch.rand(250, 1) * 0.1 - 0.05
+    y.append(y_high2)
     
-    for i in range(100):
-        startTime = time.time()
-        optimizer.zero_grad()
-        loss = model.negative_log_likelihood(xtr, ytr)
-        loss.backward()
-        optimizer.step()
-        print('iter', i, 'nll:{:.5f}'.format(loss.item()))
-        timeElapsed = time.time() - startTime
-        print('time elapsed: {:.3f}s'.format(timeElapsed))
-    with torch.no_grad():
-        ypred, ypred_var = model.forward(xtr,ytr,xte)
 
+    x = torch.cat(x, dim=0)
+    y = torch.cat(y, dim=0)
+
+    initial_data = [
+        {'raw_fidelity_name': '0','fidelity_indicator': 0, 'X': x.to(device), 'Y': y.to(device)}
+    ]
+    fidelity_num = len(initial_data)
+
+    fidelity_manager = MultiFidelityDataManager(initial_data)
+    myGP = cigp(kernel = kernel.SquaredExponentialKernel(), log_beta = 1.).to(device)
+
+    ## if nonsubset is False, max_iter should be 100 ,lr can be 1e-2
+    train_GP(myGP, fidelity_manager, max_iter=200, lr_init=1e-2)
+
+    # debugger.logger.info('training finished,start predicting')
+    with torch.no_grad():
+        ypred, ypred_var = myGP(fidelity_manager,x_test)
+
+    # debugger.logger.info('prepare to plot')
+    x_test = x_test[:,0].reshape(-1,1)
     plt.figure()
-    plt.errorbar(xte.flatten(), ypred.reshape(-1).detach(), ypred_var.diag().sqrt().squeeze().detach(), fmt='r-.' ,alpha = 0.2)
-    plt.fill_between(xte.flatten(), ypred.reshape(-1).detach() - ypred_var.diag().sqrt().squeeze().detach(), ypred.reshape(-1).detach() + ypred_var.diag().sqrt().squeeze().detach(), alpha = 0.2)
-    plt.plot(xte.flatten(), yte, 'k+')
-    plt.show()
-
-
-    # single output test 2
-    xte = torch.rand(128,2) * 2
-    yte = torch.sin(xte.sum(1)).view(-1,1) + 10
-
-    xtr = torch.rand(32, 2) * 2
-    ytr = torch.sin(xtr.sum(1)).view(-1,1) + torch.randn(32, 1) * 0.5 + 10
-
-    kernel1 = kernel.SumKernel(kernel.LinearKernel(1), kernel.MaternKernel(1))
-    model = cigp(kernel = kernel1, log_beta = 1.0)
-    optimizer = torch.optim.Adam(model.parameters(), lr = 1e-1)
-    
-    for i in range(300):
-        startTime = time.time()
-        optimizer.zero_grad()
-        loss = model.negative_log_likelihood(xtr, ytr)
-        loss.backward()
-        optimizer.step()
-        print('iter', i, 'nll:{:.5f}'.format(loss.item()))
-        timeElapsed = time.time() - startTime
-        print('time elapsed: {:.3f}s'.format(timeElapsed))
-    with torch.no_grad():
-        ypred, ypred_var = model.forward(xtr,ytr,xte)
-
-    # plt.errorbar(xte.sum(1), ypred.reshape(-1).detach(), ystd.sqrt().squeeze().detach(), fmt='r-.' ,alpha = 0.2)
-    plt.plot(xte.sum(1), yte, 'b+')
-    plt.plot(xte.sum(1), ypred.reshape(-1).detach(), 'r+')
-    # plt.plot(xtr.sum(1), ytr, 'b+')
-    plt.show()
-    
-
-    # multi output test
-    xte = torch.linspace(0, 6, 100).view(-1, 1)
-    yte = torch.hstack([torch.sin(xte),
-                       torch.cos(xte),
-                        xte.tanh()] )
-
-    xtr = torch.rand(32, 1) * 6
-    ytr = torch.sin(xtr) + torch.rand(32, 1) * 0.5
-    ytr = torch.hstack([torch.sin(xtr),
-                       torch.cos(xtr),
-                        xtr.tanh()] )+ torch.randn(32, 3) * 0.2
-
-
-    kernel1 = kernel.SumKernel(kernel.LinearKernel(1), kernel.MaternKernel(1))
-    model = cigp(kernel = kernel1, log_beta = 1.0)
-    optimizer = torch.optim.Adam(model.parameters(), lr = 1e-1)
-    
-    for i in range(300):
-        startTime = time.time()
-        optimizer.zero_grad()
-        loss = -model.negative_log_likelihood(xtr, ytr)
-        loss.backward()
-        optimizer.step()
-        print('iter', i, 'nll:{:.5f}'.format(loss.item()))
-        timeElapsed = time.time() - startTime
-        print('time elapsed: {:.3f}s'.format(timeElapsed))
-    with torch.no_grad():
-        ypred, ypred_var = model.forward(xtr,ytr,xte)
-
-    # plt.errorbar(xte, ypred.detach(), ypred_var.sqrt().squeeze().detach(),fmt='r-.' ,alpha = 0.2)
-    plt.plot(xte, ypred.detach(),'r-.')
-    plt.plot(xtr, ytr, 'b+')
-    plt.plot(xte, yte, 'k-')
-    plt.show()
-
-    # plt.close('all')
-    plt.plot(xtr, ytr, 'b+')
-    for i in range(3):
-        plt.plot(xte, yte[:, i], label='truth', color='r')
-        plt.plot(xte, ypred[:, i], label='prediction', color='navy')
-        plt.fill_between(xte.squeeze(-1).detach().numpy(),
-                         ypred[:, i].squeeze(-1).detach().numpy() + torch.sqrt(ypred_var[:, i].squeeze(-1)).detach().numpy(),
-                         ypred[:, i].squeeze(-1).detach().numpy() - torch.sqrt(ypred_var[:, i].squeeze(-1)).detach().numpy(),
-                         alpha=0.2)
-    plt.show()
+    plt.errorbar(x_test.flatten(), ypred.reshape(-1).detach(), ypred_var.diag().sqrt().squeeze().detach(), fmt='r-.' ,alpha = 0.2)
+    plt.fill_between(x_test.flatten(), ypred.reshape(-1).detach() - ypred_var.diag().sqrt().squeeze().detach(), ypred.reshape(-1).detach() + ypred_var.diag().sqrt().squeeze().detach(), alpha = 0.2)
+    plt.plot(x_test.flatten(), y_test, 'k+')
+    plt.show() 
 

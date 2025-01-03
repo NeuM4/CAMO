@@ -8,30 +8,13 @@ from GaussianProcess.cigp_v10 import cigp as GPR
 from FidelityFusion_Models.MF_data import MultiFidelityDataManager
 import matplotlib.pyplot as plt
 
-from scipy.stats import gamma
-
 # Reserve part for future development
-def warp_function(lf, hf, fid_num):
+def warp_function(lf, hf):
     l = lf + 1
     h = hf + 1
     return l, h
 
-class fidelity_kernel_MCMC(nn.Module):
-    """
-    fidelity kernel module base ARD and use MCMC to calculate the integral.
-
-    Args:
-        input_dim (int): The input dimension.
-        initial_length_scale (float): The initial length scale value. Default is 1.0.
-        initial_signal_variance (float): The initial signal variance value. Default is 1.0.
-        eps (float): A small constant to prevent division by zero. Default is 1e-9.
-
-    Attributes:
-        length_scales (nn.Parameter): The length scales for each dimension.
-        signal_variance (nn.Parameter): The signal variance.
-        eps (float): A small constant to prevent division by zero.
-
-    """
+class fidelity_kernel(nn.Module):
 
     def __init__(self, kernel1, lf, hf, b, initial_length_scale=1.0, initial_signal_variance=1.0, eps=1e-3):
         super().__init__()
@@ -50,8 +33,6 @@ class fidelity_kernel_MCMC(nn.Module):
     def warpping_function(self, f_1, f_2):
         wf_1 = f_1 * self.k + self.c
         wf_2 = f_2 * self.k + self.c
-        # wf_1 = f_1
-        # wf_2 = f_2
         return wf_1, wf_2
     
     def h(self, t, t_1):
@@ -64,24 +45,17 @@ class fidelity_kernel_MCMC(nn.Module):
         return tem_1 * tem_2 * (tem_3 - tem_4)
 
     def forward(self, x1, x2):
-        """
-        Compute the covariance matrix using the ARD kernel.
 
-        Args:
-            x1 (torch.Tensor): The first input tensor.
-            x2 (torch.Tensor): The second input tensor.
+        # w_lf, w_hf = self.warpping_function(self.lf, self.hf)
+        # h_part_1 = self.h(w_lf, w_hf)
+        # h_part_2 = self.h(w_hf, w_lf)
+        # final_part = 0.5 * torch.sqrt(torch.tensor(torch.pi)) * self.log_length_scales.exp() * (h_part_1 + h_part_2) + (-self.b * (w_lf+w_hf)).exp()
+        length_scales = torch.abs(self.log_length_scales.exp()) + self.eps
+        scaled_f1 = self.lf / length_scales
+        scaled_f2 = self.hf / length_scales
+        sqdist = torch.cdist(scaled_f1.reshape(-1, 1), scaled_f2.reshape(-1, 1), p=2)**2
 
-        Returns:
-            torch.Tensor: The covariance matrix.
-
-        """
-        w_lf, w_hf = self.warpping_function(self.lf, self.hf)
-        h_part_1 = self.h(w_lf, w_hf)
-        h_part_2 = self.h(w_hf, w_lf)
-
-        final_part = 0.5 * torch.sqrt(torch.tensor(torch.pi)) * self.log_length_scales.exp() * (h_part_1 + h_part_2) + (-self.b * (w_lf+w_hf)).exp()
-
-        return self.signal_variance.abs() * final_part * self.kernel1(x1, x2)
+        return self.signal_variance.abs() * torch.exp(-0.5 * sqdist) * self.kernel1(x1, x2)
 
 class DMF_CAR_dkl(nn.Module):
     # initialize the model
@@ -95,20 +69,19 @@ class DMF_CAR_dkl(nn.Module):
         self.cigp_list.append(GPR(kernel=kernel_list[0], log_beta=1.0))
 
         for fidelity_low in range(self.fidelity_num - 1):
-            low_fidelity_indicator, high_fidelity_indicator = warp_function(fidelity_low, fidelity_low+1, self.fidelity_num)
-            # input_dim = kernel_list[0].length_scale.shape[0]
-            kernel_residual = fidelity_kernel_MCMC(kernel_list[fidelity_low+1],
+            low_fidelity_indicator, high_fidelity_indicator = warp_function(fidelity_low, fidelity_low+1)
+            kernel_residual = fidelity_kernel(kernel_list[fidelity_low+1],
                                                    low_fidelity_indicator, high_fidelity_indicator, self.b)
             self.cigp_list.append(GPR(kernel=kernel_residual, log_beta=1.0))
         
-        self.FeatureExtractor = torch.nn.Sequential(nn.Linear(input_dim, input_dim*4),
+        self.dkl = torch.nn.Sequential(nn.Linear(input_dim, input_dim*4),
             nn.LeakyReLU(),
             nn.Linear(input_dim *4, input_dim * 4),
             nn.LeakyReLU(),
             nn.Linear(input_dim * 4, input_dim * 4),
             nn.LeakyReLU(),
             nn.Linear(input_dim * 4, input_dim))
-        self.FeatureExtractor = self.FeatureExtractor.double()
+        self.dkl = self.dkl.double()
 
         self.cigp_list = torch.nn.ModuleList(self.cigp_list)
         self.if_nonsubset = if_nonsubset
@@ -120,19 +93,19 @@ class DMF_CAR_dkl(nn.Module):
             fidelity_level = to_fidelity
         else:
             fidelity_level = self.fidelity_num - 1
-        x_test = self.FeatureExtractor(x_test)
+        x_test = self.dkl(x_test)
         # predict the model
         for i_fidelity in range(fidelity_level + 1):
             if i_fidelity == 0:
                 x_train,y_train = data_manager.get_data(i_fidelity, normal = normal)
-                x_train = self.FeatureExtractor(x_train)
+                x_train = self.dkl(x_train)
                 y_pred_low, cov_pred_low = self.cigp_list[i_fidelity](x_train,y_train,x_test)
                 if fidelity_level == 0:
                     y_pred_high = y_pred_low
                     cov_pred_high = cov_pred_low
             else:
                 x_train, y_train = data_manager.get_data_by_name('res-{}'.format(i_fidelity),normal = normal)
-                x_train = self.FeatureExtractor(x_train)
+                x_train = self.dkl(x_train)
                 y_pred_res, cov_pred_res= self.cigp_list[i_fidelity](x_train,y_train,x_test)
                 y_pred_high = y_pred_low + self.b * y_pred_res ## ?
                 cov_pred_high = cov_pred_low + (self.b **2) * cov_pred_res 
@@ -153,7 +126,7 @@ def train_DMFCAR_dkl(CARmodel, data_manager, max_iter=1000, lr_init=1e-1, normal
             x_low,y_low = data_manager.get_data(i_fidelity, normal = normal)
             for i in range(max_iter):
                 optimizer.zero_grad()
-                x_low1 = CARmodel.FeatureExtractor(x_low)
+                x_low1 = CARmodel.dkl(x_low)
                 loss = CARmodel.cigp_list[i_fidelity].negative_log_likelihood(x_low1, y_low)
                 if debugger is not None:
                     debugger.get_status(CARmodel, optimizer, i, loss)
@@ -180,13 +153,12 @@ def train_DMFCAR_dkl(CARmodel, data_manager, max_iter=1000, lr_init=1e-1, normal
                     if y_residual_var is not None:
                         y_residual_var = y_residual_var.detach()
                     data_manager.refresh_filling_data(fidelity_index=None,raw_fidelity_name='res-{}'.format(i_fidelity),x=subset_x.detach(),y=[y_residual.detach(),y_residual_var])
-                subset_x1 = CARmodel.FeatureExtractor(subset_x)
+                subset_x1 = CARmodel.dkl(subset_x)
                 loss = CARmodel.cigp_list[i_fidelity].negative_log_likelihood(subset_x1, y_residual)
                 if debugger is not None:
                     debugger.get_status(CARmodel, optimizer, i, loss)
                 loss.backward()
                 optimizer.step()
-                # print('fidelity:', i_fidelity, 'iter', i,'b:',CARmodel.b.item(), 'nll:{:.5f}'.format(loss.item()))
                 print('fidelity {}, epoch {}/{},b {}, nll: {}'.format(i_fidelity, i+1, max_iter,CARmodel.b.item(), loss.item()), end='\r')
             print('')
             
@@ -224,7 +196,6 @@ if __name__ == "__main__":
     fidelity_manager = MultiFidelityDataManager(initial_data)
     fidelity_num = 3
     kernel_list = [kernel.SquaredExponentialKernel() for _ in range(fidelity_num)]
-    # kernel_residual = fidelity_kernel_MCMC(x_low.shape[1], kernel.ARDKernel(x_low.shape[1]), 1, 2)
     CAR = DMF_CAR_dkl(fidelity_num=fidelity_num,input_dim=x_low.shape[1], kernel_list=kernel_list, b_init=1.0).to(device)
 
     train_DMFCAR_dkl(CAR,fidelity_manager, max_iter=200, lr_init=1e-2, debugger = None)
@@ -238,5 +209,4 @@ if __name__ == "__main__":
     plt.errorbar(x_test.flatten(), ypred.reshape(-1).detach(), ypred_var.diag().sqrt().squeeze().detach(), fmt='r-.' ,alpha = 0.2)
     plt.fill_between(x_test.flatten(), ypred.reshape(-1).detach() - ypred_var.diag().sqrt().squeeze().detach(), ypred.reshape(-1).detach() + ypred_var.diag().sqrt().squeeze().detach(), alpha=0.2)
     plt.plot(x_test.flatten(), y_test, 'k+')
-    # plt.plot(x_high1.flatten(), y_high1.flatten(), 'b+')
     plt.show() 

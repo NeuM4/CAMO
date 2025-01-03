@@ -8,34 +8,13 @@ from GaussianProcess.cigp_v10 import cigp as GPR
 from FidelityFusion_Models.MF_data import MultiFidelityDataManager
 import matplotlib.pyplot as plt
 
-# Reserve part for future development
-# def warp_function(lf, hf, fid_num):
-#     l = (1.0 / fid_num) * (lf + 1)
-#     h = (1.0 / fid_num) * (hf + 1)
-#     return l, h
-
-def warp_function(lf, hf, fid_num):
+def warp_function(lf, hf):
     l = lf + 1
     h = hf + 1
     return l, h
 
-class fidelity_kernel_MCMC(nn.Module):
-    """
-    fidelity kernel module base ARD and use MCMC to calculate the integral.
-
-    Args:
-        input_dim (int): The input dimension.
-        initial_length_scale (float): The initial length scale value. Default is 1.0.
-        initial_signal_variance (float): The initial signal variance value. Default is 1.0.
-        eps (float): A small constant to prevent division by zero. Default is 1e-9.
-
-    Attributes:
-        length_scales (nn.Parameter): The length scales for each dimension.
-        signal_variance (nn.Parameter): The signal variance.
-        eps (float): A small constant to prevent division by zero.
-
-    """
-
+class fidelity_kernel(nn.Module):
+    
     def __init__(self, kernel1, lf, hf, b, initial_length_scale=1.0, initial_signal_variance=1.0, eps=1e-3):
         super().__init__()
         self.kernel1 = kernel1
@@ -50,11 +29,9 @@ class fidelity_kernel_MCMC(nn.Module):
         self.k = nn.Parameter(torch.tensor([1.0]))
         self.c = nn.Parameter(torch.tensor([0.0]))
 
-    def warpping_function(self, f_1, f_2):
+    def warp_function(self, f_1, f_2):
         wf_1 = f_1 * self.k + self.c
         wf_2 = f_2 * self.k + self.c
-        # wf_1 = f_1
-        # wf_2 = f_2
         return wf_1, wf_2
     
     def h(self, t, t_1):
@@ -67,18 +44,8 @@ class fidelity_kernel_MCMC(nn.Module):
         return tem_1 * tem_2 * (tem_3 - tem_4)
 
     def forward(self, x1, x2):
-        """
-        Compute the covariance matrix using the ARD kernel.
-
-        Args:
-            x1 (torch.Tensor): The first input tensor.
-            x2 (torch.Tensor): The second input tensor.
-
-        Returns:
-            torch.Tensor: The covariance matrix.
-
-        """
-        w_lf, w_hf = self.warpping_function(self.lf, self.hf)
+        
+        w_lf, w_hf = self.warp_function(self.lf, self.hf)
         h_part_1 = self.h(w_lf, w_hf)
         h_part_2 = self.h(w_hf, w_lf)
 
@@ -99,9 +66,8 @@ class DMF_CAR(nn.Module):
         self.cigp_list.append(GPR(kernel=kernel_list[0], log_beta=1.0))
 
         for fidelity_low in range(self.fidelity_num - 1):
-            low_fidelity_indicator, high_fidelity_indicator = warp_function(fidelity_low, fidelity_low+1, self.fidelity_num)
-            # input_dim = kernel_list[0].length_scale.shape[0]
-            kernel_residual = fidelity_kernel_MCMC(kernel_list[fidelity_low+1],
+            low_fidelity_indicator, high_fidelity_indicator = warp_function(fidelity_low, fidelity_low+1)
+            kernel_residual = fidelity_kernel(kernel_list[fidelity_low+1],
                                                    low_fidelity_indicator, high_fidelity_indicator, self.b)
             self.cigp_list.append(GPR(kernel=kernel_residual, log_beta=1.0))
         
@@ -149,7 +115,6 @@ def train_DMFCAR(CARmodel, data_manager, max_iter=1000, lr_init=1e-1, normal =Tr
                     debugger.get_status(CARmodel, optimizer, i, loss)
                 loss.backward()
                 optimizer.step()
-                # print('fidelity:', i_fidelity, 'iter', i, 'nll:{:.5f}'.format(loss.item()))
                 print('fidelity {}, epoch {}/{}, nll: {}'.format(i_fidelity, i+1, max_iter, loss.item()), end='\r')
             print('')
         else:
@@ -175,7 +140,6 @@ def train_DMFCAR(CARmodel, data_manager, max_iter=1000, lr_init=1e-1, normal =Tr
                     debugger.get_status(CARmodel, optimizer, i, loss)
                 loss.backward()
                 optimizer.step()
-                # print('fidelity:', i_fidelity, 'iter', i,'b:',CARmodel.b.item(), 'nll:{:.5f}'.format(loss.item()))
                 print('fidelity {}, epoch {}/{},b {}, nll: {}'.format(i_fidelity, i+1, max_iter,CARmodel.b.item(), loss.item()), end='\r')
             print('')
             
@@ -213,7 +177,6 @@ if __name__ == "__main__":
     fidelity_manager = MultiFidelityDataManager(initial_data)
     fidelity_num = 3
     kernel_list = [kernel.SquaredExponentialKernel() for _ in range(fidelity_num)]
-    # kernel_residual = fidelity_kernel_MCMC(x_low.shape[1], kernel.ARDKernel(x_low.shape[1]), 1, 2)
     CAR = DMF_CAR(fidelity_num=fidelity_num, kernel_list=kernel_list, b_init=1.0).to(device)
 
     train_DMFCAR(CAR,fidelity_manager, max_iter=200, lr_init=1e-2, debugger = None)
@@ -227,6 +190,5 @@ if __name__ == "__main__":
     plt.errorbar(x_test.flatten(), ypred.reshape(-1).detach(), ypred_var.diag().sqrt().squeeze().detach(), fmt='r-.' ,alpha = 0.2)
     plt.fill_between(x_test.flatten(), ypred.reshape(-1).detach() - ypred_var.diag().sqrt().squeeze().detach(), ypred.reshape(-1).detach() + ypred_var.diag().sqrt().squeeze().detach(), alpha=0.2)
     plt.plot(x_test.flatten(), y_test, 'k+')
-    # plt.plot(x_high1.flatten(), y_high1.flatten(), 'b+')
     plt.show()
     # plt.savefig('DMF_CAR.png') 

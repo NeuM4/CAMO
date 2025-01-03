@@ -84,7 +84,7 @@ class upper_confidence_bound_continuous(nn.Module):
         tt = torch.cat(tem, dim=1)
         print(tt)
         self.x = nn.Parameter(tt.reshape(1, self.x_dimension).double(),  requires_grad=True)
-        self.optimise_adam(niteration=60, lr=0.01)
+        self.optimise_adam(niteration=100, lr=0.01)
 
         new_x = self.x.detach()
 

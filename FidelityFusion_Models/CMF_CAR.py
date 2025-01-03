@@ -10,27 +10,11 @@ import matplotlib.pyplot as plt
 
 
 class fidelity_kernel_MC(nn.Module):
-    """
-    fidelity kernel module base ARD and use monte carlo to calculate the integral.
-
-    Args:
-        input_dim (int): The input dimension.
-        initial_length_scale (float): The initial length scale value. Default is 1.0.
-        initial_signal_variance (float): The initial signal variance value. Default is 1.0.
-        eps (float): A small constant to prevent division by zero. Default is 1e-9.
-
-    Attributes:
-        length_scales (nn.Parameter): The length scales for each dimension.
-        signal_variance (nn.Parameter): The signal variance.
-        eps (float): A small constant to prevent division by zero.
-
-    """
 
     def __init__(self, kernel1, b, initial_length_scale=0.0, initial_signal_variance=1.0, eps=1e-3):
         super().__init__()
         self.kernel1 = kernel1
         self.b = b
-        # self.log_length_scales = nn.Parameter(torch.ones(input_dim) * initial_length_scale)
         self.log_length_scales = nn.Parameter(torch.tensor([initial_length_scale]))
         self.signal_variance = nn.Parameter(torch.tensor([initial_signal_variance]))
         self.eps = eps
@@ -56,29 +40,13 @@ class fidelity_kernel_MC(nn.Module):
 
 
     def forward(self, x1, x2):
-        """
-        Compute the covariance matrix using the ARD kernel.
-
-        Args:
-            x1 (torch.Tensor): The first input tensor.
-            x2 (torch.Tensor): The second input tensor.
-
-        Returns:
-            torch.Tensor: The covariance matrix.
-
-        """
+        
         X1 = x1[:, :-1].reshape(-1, x1.shape[1]-1)
         X2 = x2[:, :-1].reshape(-1, x2.shape[1]-1)
-        # raw_fidelity_indicator_1 = x1[:, 1].reshape(-1, 1) # t'
-        # raw_fidelity_indicator_2 = x2[:, 1].reshape(-1, 1) # t
-
-        # fidelity_indicator_1, fidelity_indicator_2 = self.warp_function(raw_fidelity_indicator_1, raw_fidelity_indicator_2)
 
         fidelity_indicator_1 = x1[:, -1].reshape(-1, 1) # t'
         fidelity_indicator_2 = x2[:, -1].reshape(-1, 1) # t
         fidelity_indicator_1, fidelity_indicator_2 = self.warp_function(fidelity_indicator_1, fidelity_indicator_2)
-        # print("length:", self.log_length_scales)
-        # print("b:", self.b)
 
         tem = [fidelity_indicator_1 for i in range(fidelity_indicator_2.size(0))]
         T1 = torch.cat(tem, dim=1)
@@ -96,7 +64,6 @@ class ContinuousAutoRegression_large(nn.Module):
     # initialize the model
     def __init__(self, kernel_x, b_init=1.0):
         super().__init__()
-        # self.fidelity_num = fidelity_num
         self.b = torch.nn.Parameter(torch.tensor(b_init))
 
         kernel_full = fidelity_kernel_MC(kernel_x, self.b)
@@ -150,11 +117,6 @@ if __name__ == "__main__":
     y_train = torch.cat((y_low, y_high1, y_high2), 0)
     y_test = torch.sin(x_test)
 
-    # x_low = torch.cat((x_low, 0.33*torch.ones(x_low.shape[0]).reshape(-1,1)), 1)
-    # x_high1 = torch.cat((x_high1, 0.67*torch.ones(x_high1.shape[0]).reshape(-1,1)), 1)
-    # x_high2 = torch.cat((x_high2, torch.ones(x_high2.shape[0]).reshape(-1,1)), 1)
-    # x_test = torch.cat((x_test, torch.ones(x_test.shape[0]).reshape(-1,1)), 1)
-
     x_low = torch.cat((x_low, torch.ones(x_low.shape[0]).reshape(-1,1)), 1)
     x_high1 = torch.cat((x_high1, 2*torch.ones(x_high1.shape[0]).reshape(-1,1)), 1)
     x_high2 = torch.cat((x_high2, 3*torch.ones(x_high2.shape[0]).reshape(-1,1)), 1)
@@ -163,11 +125,6 @@ if __name__ == "__main__":
     x = torch.cat((x_low, x_high1, x_high2), 0)
     y = torch.cat((y_low, y_high1, y_high2), 0)
 
-    # initial_data = [
-    #     {'raw_fidelity_name': '0','fidelity_indicator': 0, 'X': x_low, 'Y': y_low},
-    #     {'raw_fidelity_name': '1','fidelity_indicator': 1, 'X': x_high1, 'Y': y_high1},
-    #     {'raw_fidelity_name': '2','fidelity_indicator': 2, 'X': x_high2, 'Y': y_high2},
-    # ]
     initial_data = [
         {'raw_fidelity_name': '0','fidelity_indicator': 0, 'X': x.double(), 'Y': y.double()},
     ]
@@ -187,9 +144,4 @@ if __name__ == "__main__":
     plt.plot(x_test[:,0].flatten(), y_test[:,0], 'k+')
     plt.show()
     # plt.savefig('CAR.png') 
-
-    # plt.figure()
-    # plt.errorbar(x_test.flatten(), ypred.reshape(-1).detach(), ypred_var.diag().sqrt().squeeze().detach(), fmt='r-.' ,alpha = 0.2)
-    # plt.fill_between(x_test.flatten(), ypred.reshape(-1).detach() - ypred_var.diag().sqrt().squeeze().detach(), ypred.reshape(-1).detach() + ypred_var.diag().sqrt().squeeze().detach(), alpha=0.2)
-    # plt.plot(x_test.flatten(), y_test, 'k+')
-    # plt.show() 
+ 

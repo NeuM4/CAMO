@@ -7,8 +7,7 @@ import math
 from Data_simulation.Cost_Function.cost_pow_10 import cost_discrete as cost_pow_10
 from Data_simulation.Cost_Function.cost_linear import cost_discrete as cost_linear
 from Data_simulation.Cost_Function.cost_log import cost_discrete as cost_log
-from Data_simulation.Cost_Function.cost_park import cost_discrete as cost_park
-cost_list = {'pow_10': cost_pow_10,'linear': cost_linear, 'log': cost_log,'park': cost_park}
+cost_list = {'pow_10': cost_pow_10,'linear': cost_linear, 'log': cost_log}
 
 class Park():
     def __init__(self, cost_type, total_fidelity_num = None):

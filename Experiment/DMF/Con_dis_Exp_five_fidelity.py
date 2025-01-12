@@ -140,7 +140,7 @@ def MF_BO_discrete(exp_config):
         elif exp_config["Acq_function"] == "EI":
             Acq_function = Acq_list[exp_config["Acq_function"]](x_dimension=xtr[0].shape[1],
                                                                 fidelity_num=total_fidelity_num,
-                                                                GP_model= GP_model,
+                                                                posterior_function= GP_model,
                                                                 cost = model_cost,
                                                                 data_manager = fidelity_manager,
                                                                 search_range = search_range,

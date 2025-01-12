@@ -5,12 +5,12 @@ from scipy.stats import norm
 
 
 class expected_improvement(nn.Module):
-    def __init__(self, x_dimension, fidelity_num, GP_model, cost, data_manager,search_range,model_name,threshold = 1e-6, seed = 0, xnorm = None, ynorm = None):
+    def __init__(self, x_dimension, fidelity_num, posterior_function, cost, data_manager,search_range,model_name,threshold = 1e-6, seed = 0, xnorm = None, ynorm = None):
         super(expected_improvement, self).__init__()
 
         self.x_dimension = x_dimension
         self.fidelity_num = fidelity_num
-        self.GP_model = GP_model
+        self.pre_func = posterior_function
         self.cost = cost
         self.data_manager = data_manager
         self.threshold = threshold
@@ -32,7 +32,7 @@ class expected_improvement(nn.Module):
                     x1 = self.x_norm.normalize(x)
             else:
                 x1 = x
-            mu, var = self.GP_model(self.data_manager, x1, fi, normal = False)
+            mu, var = self.pre_func(self.data_manager, x1, fi, normal = False)
             if self.y_norm != None:
                 try:
                     mu = self.y_norm[fi].denormalize(mu)
@@ -96,7 +96,7 @@ class expected_improvement(nn.Module):
                     x_next = self.x_norm[fi].normalize(x_next)
                 except:
                     x_next = self.x_norm.normalize(x_next)
-            _, var = self.GP_model(self.data_manager, x_next, fi, normal = False)
+            _, var = self.pre_func(self.data_manager, x_next, fi, normal = False)
             fi_var_list.append(var)
             var_mifi_inverse += 1 / var
 

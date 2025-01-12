@@ -12,3 +12,15 @@ The method can be found in the following paper
 ### 3. CAR (Continue Autoregression)
 [ContinuAR: Continuous Autoregression For Infinite-Fidelity Fusion](https://openreview.net/pdf?id=wpfsnu5syT)
 
+## 🗣️Folder Explanation
+```
+FidelityFusion_Models/
+├── readme.md
+├── CMF_CAR_dkl.py (Continue DKL surrogate model for CAMO)
+├── CMF_CAR.py (Continue Analytical solution implementation for CAMO)
+├── DMF_CAR_dkl.py (Discrete DKL surrogate model for CAMO)
+├── DMF_CAR.py (Discrete Analytical solution implementation for CAMO)
+├── MF_data.py (Class for Multi-fidelity data management)
+├── GP_dkl.py (Deep kernel GP)
+├── GP_DMF.py (Discrete fidelity Implementation of GP)
+```

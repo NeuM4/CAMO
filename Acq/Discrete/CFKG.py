@@ -8,11 +8,11 @@ MF_model_list = {'CMF_CAR': ContinuousAutoRegression_large, 'CMF_CAR_dkl': CMF_C
                  'ResGP': ResGP, 'AR': AR}
 
 class discrete_fidelity_knowledgement_gradient(torch.nn.Module):
-    def __init__(self, fidelity_num, GP_model, cost, data_model, data_manager, model_name, xdim, 
+    def __init__(self, fidelity_num, posterior_function, cost, data_model, data_manager, model_name, xdim, 
                  search_range, seed, xnorm = None, ynorm = None):
         super(discrete_fidelity_knowledgement_gradient, self).__init__()
 
-        self.GP_model_pre = GP_model
+        self.pre_func = posterior_function
         self.data_model = data_model
         self.cost = cost
         self.seed = seed
@@ -35,7 +35,7 @@ class discrete_fidelity_knowledgement_gradient(torch.nn.Module):
                     xall1 = self.x_norm.normalize(xall)
                 else:
                     xall1 = xall
-                mu_pre, var_pre = self.GP_model_pre(self.data_manager, xall1, torch.ones(100).reshape(-1,1)*(self.fidelity_num-1), normal = False)
+                mu_pre, var_pre = self.pre_func(self.data_manager, xall1, torch.ones(100).reshape(-1,1)*(self.fidelity_num-1), normal = False)
                 if self.y_norm != None:
                     mu_pre = self.y_norm.denormalize(mu_pre)
             else:
@@ -43,7 +43,7 @@ class discrete_fidelity_knowledgement_gradient(torch.nn.Module):
                     xall1 = self.x_norm[-1].normalize(xall)
                 else:
                     xall1 = xall
-                mu_pre, var_pre = self.GP_model_pre(self.data_manager, xall1, normal = False)
+                mu_pre, var_pre = self.pre_func(self.data_manager, xall1, normal = False)
                 if self.y_norm != None:
                     mu_pre = self.y_norm[-1].denormalize(mu_pre)
         # mu_pre, var_pre = self.data_manager.normalizelayer[self.GP_model_pre.fidelity_num-1].denormalize(mu_pre, var_pre)
@@ -59,7 +59,7 @@ class discrete_fidelity_knowledgement_gradient(torch.nn.Module):
                     x1 = self.x_norm.normalize(x)
             else:
                 x1 = x
-            ypred, _ = self.GP_model_pre(self.data_manager, x1, s, normal = False)
+            ypred, _ = self.pre_func(self.data_manager, x1, s, normal = False)
         
         if self.model_name in ['CMF_CAR','GP','CMF_CAR_dkl']:
             x1 = torch.cat((x1, torch.tensor([[s]], dtype=torch.float64)),dim = 1)

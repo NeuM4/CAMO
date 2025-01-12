@@ -9,7 +9,7 @@ from FidelityFusion_Models.MF_data import MultiFidelityDataManager
 import matplotlib.pyplot as plt
 
 
-class fidelity_kernel_MC(nn.Module):
+class fidelity_kernel(nn.Module):
 
     def __init__(self, kernel1, b, initial_length_scale=0.0, initial_signal_variance=1.0, eps=1e-3):
         super().__init__()
@@ -66,7 +66,7 @@ class ContinuousAutoRegression_large(nn.Module):
         super().__init__()
         self.b = torch.nn.Parameter(torch.tensor(b_init))
 
-        kernel_full = fidelity_kernel_MC(kernel_x, self.b)
+        kernel_full = fidelity_kernel(kernel_x, self.b)
         self.cigp = GPR(kernel=kernel_full, log_beta=1.0)
 
     def forward(self, data_manager, x_test, fidelity_indicator = None, normal = False):

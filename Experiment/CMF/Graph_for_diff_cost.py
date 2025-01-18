@@ -29,47 +29,44 @@ Dic = {
 
 
 
-max_dic = {'Branin': 55,'Currin': 13.798,'Park': 2.2, 'VibratePlate': 250, 'HeatedBlock': 2,'bohachevsky': 72.15,'borehole':0}
-add_dict = {'Branin': 3,'Currin': 0.02,'Park': 0.3, 'VibratePlate': 0, 'HeatedBlock': 0,'bohachevsky': 4,'borehole':0}
-cost_lim_y = {'Branin': [2,12], 'Currin': [0, 3], 'Park': [0.2, 1.4],'bohachevsky': [0, 32], 'borehole': [0, 0.5]}
-cost_lim_x = {'Branin': [13, 300], 'Currin': [13, 150], 'Park': [13, 300],'bohachevsky': [13, 150], 'borehole': [13, 300]}
+max_dic = {'Currin': 13.798,'bohachevsky': 72.15}
+add_dict = {'Currin': 0.02,'bohachevsky': 4}
+cost_lim_y = {'Currin': [0, 3],'bohachevsky': [0, 32]}
+cost_lim_x = {'Currin': [13, 150], 'bohachevsky': [13, 150]}
 
+##Currin
 data_name = 'Currin'
-seed_dic ={'pow_10':[range(0, 30)],'linear':[range(0, 30)],
-           'log':[range(0, 30)]}
+seed_dic ={'pow_10':[i for i in range(20)],'linear':[i for i in range(20)],'log':[i for i in range(20)]}
+
+##bohachevsky
+# data_name = 'bohachevsky'
+# seed_dic ={'pow_10':[i for i in range(20)],'linear':[i for i in range(20)],'log':[i for i in range(20)]}
+
 
 methods_name_list = [ 
                      'GP_UCB', 
                      'GP_cfKG',
                      'fabolas',
-                    'smac',
+                     'smac',
                      'CMF_CAR_UCB',
-                    #  'CMF_CAR_cfKG',
-                        
                      'CMF_CAR_dkl_UCB',
-                    #  'CMF_CAR_dkl_cfKG'
                     ]
-# baseline_list = ['fabolas','smac']
 
 cost_list = ['log', 'linear', 'pow_10']
 cost_label_dic = {'log': 'Log', 'linear': 'Linear', 'pow_10': 'Power 10'}
 fig, axs = plt.subplots(1, 3, figsize=(20, 6))
 
-Exp_marker = "Norm_res"
 
 for kk in range(3):
     cost_name = cost_list[kk]
     for methods_name in methods_name_list:
         print(methods_name)
         cost_collection = []
-        # SR_collection = []
         inter_collection = []  
         for seed in seed_dic[cost_name]:
-            path = os.path.join(sys.path[-1], 'ICLR_exp', 'CMF', 'Exp_results',Exp_marker,
+            path = os.path.join(sys.path[-1], 'Experiment', 'CMF', 'Exp_results',
                                 data_name, cost_name, methods_name + '_seed_' + str(seed) + '.csv')
             data = pd.DataFrame(pd.read_csv(path))
-            # cost = data['cost'].to_numpy().reshape(-1, 1)
-            # SR = data['SR'].to_numpy().reshape(-1, 1)
             cost = data['cost'].to_numpy()
             
             if methods_name == 'fabolas':
@@ -77,8 +74,6 @@ for kk in range(3):
             else:
                 SR = data['SR'].to_numpy()
             inter = interp1d(cost, SR, kind='linear', fill_value="extrapolate")
-            # inter = interp1d(cost, SR, kind='linear', fill_value=np.nan, bounds_error=False)
-            # SR_collection.append(SR)
             cost_collection.append(cost)
             inter_collection.append(inter)
 
@@ -104,52 +99,7 @@ for kk in range(3):
                         mean + add_dict[data_name] + 0.96 * var,
                         alpha=0.05, color=Dic[methods_name][0])
         
-    # for methods_name in baseline_list:
-    #     print(methods_name)
-    #     cost_collection = []
-    #     # SR_collection = []
-    #     inter_collection = []
-    #     for seed in [0,1,2,3,4]:
-    #         path = os.path.join(sys.path[-1], 'Rebuttal_Experiment', 'CMF', 'Exp_results',Exp_marker,
-    #                             data_name, cost_name, methods_name + '_seed_' + str(seed) + '.csv')
-    #         data = pd.DataFrame(pd.read_csv(path))
-    #         # cost = data['cost'].to_numpy().reshape(-1, 1)
-    #         # SR = data['SR'].to_numpy().reshape(-1, 1)
-    #         cost = data['cost'].to_numpy()
-            
-    #         if methods_name == 'fabolas':
-    #             SR = max_dic[data_name] - data['incumbents'].to_numpy()
-    #         else:
-    #             SR = data['SR'].to_numpy()
-    #         inter = interp1d(cost, SR, kind='linear', fill_value="extrapolate")
-    #         # inter = interp1d(cost, SR, kind='linear', fill_value=np.nan, bounds_error=False)
-    #         # SR_collection.append(SR)
-    #         cost_collection.append(cost)
-    #         inter_collection.append(inter)
-
-    #     cost_x = np.unique(np.concatenate(cost_collection))
-    #     SR_new = [inter_collection[i](cost_x) for i in range(len(inter_collection))]
-    #     SR_new = np.array(SR_new)
-    #     mean = np.mean(SR_new, axis=0)
-    #     var = np.std(SR_new, axis=0)
-    #     if  cost_name == 'log':
-    #         if methods_name in ['CMF_CAR_UCB','CMF_CAR_cfKG','CMF_CAR_dkl_UCB', 'CMF_CAR_dkl_cfKG']:
-    #             makervery_index = 90
-    #         else:
-    #             makervery_index = 90
-    #     elif  cost_name == 'linear':
-    #         makervery_index = 20
-    #     else:
-    #         makervery_index = 14
-    #     ll = axs[kk].plot(cost_x, mean + add_dict[data_name], ls=Dic[methods_name][-1], color=Dic[methods_name][0],
-    #                 label=Dic[methods_name][2],
-    #                 marker=Dic[methods_name][1], markersize=12, markevery=makervery_index)
-    #     axs[kk].fill_between(cost_x,
-    #                     mean + add_dict[data_name] - 0.96 * var,
-    #                     mean + add_dict[data_name] + 0.96 * var,
-    #                     alpha=0.05, color=Dic[methods_name][0])
-        
-    # plt.yscale('log')
+    
     axs[kk].set_xlabel("Cost: " + cost_label_dic[cost_name], fontsize=25)
     axs[kk].set_ylabel("Simple regret", fontsize=25)
     # axs[kk].set_yscale('log')
@@ -158,16 +108,8 @@ for kk in range(3):
     axs[kk].tick_params(axis='both', labelsize=20)
     axs[kk].grid()
 
-# label = [Dic[i][-1] for i in methods_name_list]
-# label = label + [Dic[i+'_con'][-1] for i in cmf_methods_name_list]
 
 # 共享图例
 lines, labels = axs[0].get_legend_handles_labels()
-# leg = fig.legend(lines, labels, loc='upper center', bbox_to_anchor=(0.5, 1.15), fancybox=True, mode='normal', ncol=6, markerscale = 1.3, fontsize=25)
-
-# change the line width for the legend
-# for line in leg.get_lines():
-#     line.set_linewidth(2.5)
-
 plt.tight_layout()
-plt.savefig(os.path.join(sys.path[-1], 'ICLR_exp', 'CMF', 'Graphs') + '/' +'CMF_' + data_name + '_cost.png', bbox_inches='tight')
+plt.savefig(os.path.join(sys.path[-1], 'Experiment', 'CMF', 'Graphs') + '/' +'CMF_cost.png', bbox_inches='tight')

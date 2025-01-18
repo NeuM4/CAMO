@@ -8,7 +8,7 @@ from Data_simulation.Synthetic_MF_Function.tl3 import tl3
 from Data_simulation.Synthetic_MF_Function.maolin1 import maolin1
 from Data_simulation.Synthetic_MF_Function.test3 import test3
 from Data_simulation.Synthetic_MF_Function.test4 import test4
-from Data_simulation.Synthetic_MF_Function.Branin_new import Branin
+from Data_simulation.Synthetic_MF_Function.Branin_CMF import Branin
 from Data_simulation.Synthetic_MF_Function.Park import Park
 from Data_simulation.Synthetic_MF_Function.Currin import Currin
 from Data_simulation.Synthetic_MF_Function.borehole import borehole

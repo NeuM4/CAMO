@@ -177,7 +177,7 @@ if __name__ == '__main__':
     Exp_marker = 'Norm_res'
     
     # Set up logging
-    log_file_path = os.path.join(sys.path[-1], 'exp2', 'CMF', 'Exp_results', Exp_marker, data_name, args.cost_type , 'experiment.log')
+    log_file_path = os.path.join(sys.path[-1], 'Experiment', 'CMF', 'Exp_results', Exp_marker, data_name, args.cost_type , 'experiment.log')
     log_dir = os.path.dirname(log_file_path)
 
     if not os.path.exists(log_dir):
@@ -210,7 +210,7 @@ if __name__ == '__main__':
                 logging.info(f'Using acquisition function: {acq}')
                 
                 record = MF_BO_continues(exp_config)
-                path_csv = os.path.join(sys.path[-1], 'exp2', 'CMF', 'Exp_results', Exp_marker, data_name, exp_config['cost_type'])
+                path_csv = os.path.join(sys.path[-1], 'Experiment', 'CMF', 'Exp_results', Exp_marker, data_name, exp_config['cost_type'])
                 if not os.path.exists(path_csv):
                     os.makedirs(path_csv)
                 df = pd.DataFrame(record)

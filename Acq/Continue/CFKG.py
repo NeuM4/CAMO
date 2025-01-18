@@ -39,7 +39,7 @@ class continuous_fidelity_knowledgement_gradient(nn.Module):
         
         with torch.no_grad():
             x1 = self.x_norm.normalize(x)
-            y, var = self.pre_func(self.data_manager, x1, s+1)
+            y, var = self.pre_func(self.data_manager, x1, s+1) #for camo fidelity start from 1 is better
             y = self.y_norm.denormalize(y)
             
         x = torch.cat((x, s+1), dim=1)

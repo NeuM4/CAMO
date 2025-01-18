@@ -19,8 +19,7 @@ import random
 MF_model_list = {'CMF_CAR':ContinuousAutoRegression_large,'CMF_CAR_dkl':CMF_CAR_dkl,"GP":cigp}
 Acq_list = {'UCB': CMF_UCB, 'cfKG': CMF_KG}
 Data_list = {'non_linear_sin': non_linear_sin, 'forrester': forrester, 'Branin':Branin, 'Park':Park, "Currin":Currin,
-             "borehole":borehole, "booth":booth,"bohachevsky":bohachevsky,"himmelblau":himmelblau
-             ,"six_hump_camelback":six_hump_camelback,"colvile":colvile}
+             "borehole":borehole,"bohachevsky":bohachevsky,"himmelblau":himmelblau,"colvile":colvile}
 
 def MF_BO_continues(exp_config):
     seed = exp_config["seed"]
@@ -59,12 +58,10 @@ def MF_BO_continues(exp_config):
     x = torch.cat(x, dim=0)
     y = torch.cat(y, dim=0)
 
-    if args.data_name in ["Branin","Park","Currin","booth","bohachevsky","himmelblau","six_hump_camelback"]:
+    if args.data_name in ["Branin","Park","Currin","bohachevsky","himmelblau"]:
         x_normer = min_max_normalizer_2(x,columns=[0,1],min_value=0,max_value = total_fidelity_num)
     elif args.data_name == "borehole":
         x_normer = min_max_normalizer_2(x,columns=[0,1,2,3,4,5,6,7],min_value=0,max_value = total_fidelity_num)
-    elif args.data_name == "hartmann":
-        x_normer = min_max_normalizer_2(x,columns=[0,1,2,3,4,5],min_value=0,max_value = total_fidelity_num)
     elif args.data_name == "colvile":
         x_normer = min_max_normalizer_2(x,columns=[0,1,2,3],min_value=0,max_value = total_fidelity_num)
     else:
@@ -230,7 +227,7 @@ if __name__ == '__main__':
     Exp_marker = 'Norm_res'
     
     # Set up logging
-    log_file_path = os.path.join(sys.path[-1], 'exp', 'CMF', 'Exp_results', Exp_marker, data_name, args.cost_type , 'experiment.log')
+    log_file_path = os.path.join(sys.path[-1], 'Experiment', 'CMF', 'Exp_results', Exp_marker, data_name, args.cost_type , 'experiment.log')
     log_dir = os.path.dirname(log_file_path)
 
     if not os.path.exists(log_dir):
@@ -262,7 +259,7 @@ if __name__ == '__main__':
                 logging.info(f'Using acquisition function: {acq}')
                 
                 record = MF_BO_continues(exp_config)
-                path_csv = os.path.join(sys.path[-1], 'ICLR_exp', 'CMF', 'Exp_results', Exp_marker, data_name, exp_config['cost_type'])
+                path_csv = os.path.join(sys.path[-1], 'Experiment', 'CMF', 'Exp_results', Exp_marker, data_name, exp_config['cost_type'])
                 # path_csv = os.path.join('D:\\luzhenjie\\mfbo_v2', 'Experiment', 'CMF', 'Exp_results', data_name, exp_config['cost_type'])
                 if not os.path.exists(path_csv):
                     os.makedirs(path_csv)

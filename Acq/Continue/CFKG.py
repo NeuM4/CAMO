@@ -12,7 +12,7 @@ from FidelityFusion_Models.CMF_CAR_dkl import *
 MF_model_list = {'CMF_CAR': ContinuousAutoRegression_large, 'CMF_CAR_dkl': CMF_CAR_dkl, "GP": cigp,"GP_dkl": cigp_dkl}
 
 class continuous_fidelity_knowledgement_gradient(nn.Module):
-    def __init__(self, x_dimension, posterior_function, data_model, model_cost, data_manager, seed, search_range,norm,model_name):
+    def __init__(self, x_dimension, posterior_function, data_model, model_cost, data_manager, seed, search_range, norm, model_name):
         super(continuous_fidelity_knowledgement_gradient, self).__init__()
 
         self.x_dimension = x_dimension

@@ -53,7 +53,7 @@ def MF_BO_continues(exp_config):
     x = []
     y = []
     for f in range(total_fidelity_num):
-        x.append(torch.cat((xtr[f], torch.full((xtr[f].shape[0], 1), f+1)), dim=1))
+        x.append(torch.cat((xtr[f], torch.full((xtr[f].shape[0], 1), f+1)), dim=1)) #fidelity indicator start from 1 is better
         y.append(ytr[f])
     x = torch.cat(x, dim=0)
     y = torch.cat(y, dim=0)
@@ -260,7 +260,6 @@ if __name__ == '__main__':
                 
                 record = MF_BO_continues(exp_config)
                 path_csv = os.path.join(sys.path[-1], 'Experiment', 'CMF', 'Exp_results', Exp_marker, data_name, exp_config['cost_type'])
-                # path_csv = os.path.join('D:\\luzhenjie\\mfbo_v2', 'Experiment', 'CMF', 'Exp_results', data_name, exp_config['cost_type'])
                 if not os.path.exists(path_csv):
                     os.makedirs(path_csv)
                 df = pd.DataFrame(record)

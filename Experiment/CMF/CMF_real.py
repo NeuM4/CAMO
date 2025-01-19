@@ -49,7 +49,7 @@ def MF_BO_continues(exp_config):
     x = []
     y = []
     for f in range(total_fidelity_num):
-        x.append(torch.cat((xtr[f], torch.full((xtr[f].shape[0], 1), f+1)), dim=1))
+        x.append(torch.cat((xtr[f], torch.full((xtr[f].shape[0], 1), f+1)), dim=1)) #fidelity indicator start from 1 is better
         y.append(ytr[f])
     x = torch.cat(x, dim=0)
     y = torch.cat(y, dim=0)
@@ -126,6 +126,8 @@ def MF_BO_continues(exp_config):
                                                                     seed=seed + i + 1234)
             
             new_x, new_s = Acq_function.compute_next()
+
+            # Limit search range
             for k in range(new_x.shape[1]):
                 if new_x[0][k] < search_range[k][0]:
                     new_x[0][k] = search_range[k][0] + random.uniform(0,0.01)

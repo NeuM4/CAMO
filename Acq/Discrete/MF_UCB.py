@@ -29,12 +29,9 @@ class upper_confidence_bound(nn.Module):
         self.x_norm = xnorm
         self.y_norm = ynorm
 
-        # Optimizer para/target
-        # self.x = nn.Parameter(torch.ones(x_dimension))
 
     def optimise_adam(self, fidelity_indicator, niteration=100, lr=0.01):
         optimizer = torch.optim.Adam(self.parameters(), lr=lr)
-        # optimizer.zero_grad()
         for i in range(niteration):
             optimizer.zero_grad()
             loss = self.negative_ucb(fidelity_indicator)

@@ -26,7 +26,7 @@ class upper_confidence_bound_continuous(nn.Module):
         self.k_0 = torch.tensor(1.0)
         self.p = torch.tensor(1.0)
 
-    def kernel(self, X1, X2):
+    def fidelity_space_kernel(self, X1, X2):  # from BOCA paper
     # the common RBF kernel
         X1 = X1 / self.log_length_scale.exp()
         X2 = X2 / self.log_length_scale.exp()
@@ -43,7 +43,7 @@ class upper_confidence_bound_continuous(nn.Module):
         else:
             input = torch.ones(1).reshape(-1, 1)*input
 
-        phi = self.kernel(input.double(), torch.ones(1).reshape(-1, 1).double())
+        phi = self.fidelity_space_kernel(input.double(), torch.ones(1).reshape(-1, 1).double())
         phi = phi.detach()
         ksin = torch.sqrt(1- torch.pow(phi, 2))
         return ksin
@@ -55,7 +55,6 @@ class upper_confidence_bound_continuous(nn.Module):
         return gamma_z
 
     def negative_ucb(self):
-        # mean, var = self.pre_func(self.x, torch.ones(1).reshape(-1, 1)*self.search_range[-1][-1])
         x_in = torch.cat((self.x, torch.ones(1).reshape(-1, 1)*(self.search_range[-1][-1]+1)), dim=1)
         x_in1 = self.x_norm.normalize(x_in)
         mean, var = self.pre_func(self.data_manager, x_in1)
@@ -116,8 +115,5 @@ class upper_confidence_bound_continuous(nn.Module):
             new_s = 0.1
         else:
             new_s = min(possible_z)
-
-        # if isinstance(new_x, torch.Tensor):
-        #     new_x = new_x.detach().numpy()
 
         return new_x, new_s

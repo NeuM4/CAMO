@@ -1,6 +1,6 @@
 import numpy as np
 import torch
-class cost_discrete():
+class cost():
     def __init__(self, fidelity_range):
         self.s_min = fidelity_range[0]
         self.s_max = fidelity_range[-1]
@@ -18,7 +18,7 @@ class cost_discrete():
             C += self.compute_cost(i) * dataset[i].shape[0]
         return C
     
-    def compute_gp_cost(self, dataset):
+    def compute_gp_cost(self, dataset): #use in CMF
         C = 0
         for i in range(len(dataset[0])):
             C += self.compute_cost(dataset[0][i][-1]-1)
@@ -30,7 +30,7 @@ class cost_discrete():
             C += self.compute_cost(int(key)) * int(index[key])
         return C
 
-    def compute_model_cost_fabolas(self, X, s):
+    def compute_model_cost_fabolas(self, X, s): #use in fabolas
         C= 0
         for i in range(X.shape[0]):
             # C += self.compute_cost(s[i]-1)

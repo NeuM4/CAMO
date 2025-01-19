@@ -62,7 +62,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     data_name = args.data_name
     max_theoretical = max_dic[data_name]
-    # for seed in [1, 2, 3, 4]:
     for seed in range(30):
         recording = {"cost": [], "SR": [], 'operation_time':[],'time':[]}
         recording["SR"].append(max_theoretical)

@@ -83,14 +83,14 @@ class SyntheticFunction:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="An example program with command-line arguments")
     parser.add_argument("--data_name", type=str, default="non_linear_sin")
-    max_dic = {'forrester': 50, 'non_linear_sin':0.033,'Branin': 55,'Currin': 14,'Park': 2.2,
+    max_dic = {'forrester': 48.4495, 'non_linear_sin':0.03338,'Branin': 54.75,'Currin': 13.798,'Park': 2.174,
                'himmblau':303.5,'bohachevsky': 72.15,'colvile':609.26,'borehole':244}
     Data_list = {'non_linear_sin': non_linear_sin, 'forrester': forrester, 'Branin': Branin, 'Park':Park, "Currin":Currin,
                  'bohachevsky':bohachevsky,'borehole':borehole,'colvile':colvile,'himmblau':himmelblau}
     args = parser.parse_args()
     data_name = args.data_name
     max_theoretical = max_dic[data_name]
-    # for seed in [1, 2, 3, 4]:
+    
     for seed in range(30):
         recording = {"cost": [], "SR": [], 'operation_time':[],'time':[]}
         recording["SR"].append(max_theoretical)

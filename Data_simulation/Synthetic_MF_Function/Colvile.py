@@ -3,9 +3,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..')))
 import torch
 
-from Data_simulation.Cost_Function.cost_pow_10 import cost_discrete as cost_pow_10
-from Data_simulation.Cost_Function.cost_linear import cost_discrete as cost_linear
-from Data_simulation.Cost_Function.cost_log import cost_discrete as cost_log
+from Data_simulation.Cost_Function import *
 cost_list = {'pow_10': cost_pow_10,'linear': cost_linear, 'log': cost_log}
 
 class colvile():
@@ -88,6 +86,7 @@ class colvile():
         torch.manual_seed(1)
         
         # Generate random points within the search range
+        # In the past, when using 1000, a larger value should be taken to ensure accuracy
         num_points = 1000
         
         tem = []

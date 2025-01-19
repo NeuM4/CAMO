@@ -1,46 +1,7 @@
 import numpy as np
 import torch
+
 class cost():
-    def __init__(self, fidelity_range):
-        self.s_min = fidelity_range[0]
-        self.s_max = fidelity_range[-1]
-
-    def compute_cost(self, z):
-        if isinstance(z, np.ndarray):
-            c = np.power(10, z)
-        else:
-            c = pow(10, z)
-        return c
-
-
-    def compute_model_cost(self, dataset, s_index):
-        C = 0
-        for j in range(len(dataset)):
-            C += self.compute_cost(s_index[j])
-
-        return int(C)
-    
-    def compute_gp_cost(self, dataset):
-        C = 0
-        for i in range(len(dataset[0])):
-            C += self.compute_cost(dataset[0][i][1])
-        return C
-
-
-    def compute_model_cost_fabolas(self, X, y):
-        C= 0
-        for i in X:
-            C += self.compute_cost(i[-1])
-        return C
-
-    def compute_model_cost_smac(self, dataset):
-        C = 0
-        for i in range(len(dataset)):
-            C += self.compute_cost(i+1) * dataset[i].shape[0]
-        return C
-
-
-class cost_discrete():
     def __init__(self, fidelity_range):
         self.s_min = fidelity_range[0]
         self.s_max = fidelity_range[-1]
@@ -65,7 +26,7 @@ class cost_discrete():
             C += self.compute_cost(i) * dataset[i].shape[0]
         return C
     
-    def compute_model_ConDis_cost(self, dataset, fi):
+    def compute_model_ConDis_cost(self, dataset, fi): # use in DMF
         C = 0
         for i in range(len(dataset)):
             C += self.compute_cost(i/fi) * dataset[i].shape[0]
@@ -83,7 +44,7 @@ class cost_discrete():
             C += self.compute_cost(int(key)) * int(index[key])
         return C
 
-    def compute_model_cost_fabolas(self, X, s):
+    def compute_model_cost_fabolas(self, X, s): #use in fabolas
         C= 0
         for i in range(X.shape[0]):
             # C += self.compute_cost(s[i]-1)

@@ -3,10 +3,8 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..')))
 import torch.nn as nn
 import torch
-from FidelityFusion_Models.GP_DMF import *
-from FidelityFusion_Models.GP_dkl import *
-from FidelityFusion_Models.CMF_CAR import *
-from FidelityFusion_Models.CMF_CAR_dkl import *
+from FidelityFusion_Models import *
+from GaussianProcess import kernel
 
 
 MF_model_list = {'CMF_CAR': ContinuousAutoRegression_large, 'CMF_CAR_dkl': CMF_CAR_dkl, "GP": cigp,"GP_dkl": cigp_dkl}
@@ -33,7 +31,7 @@ class continuous_fidelity_knowledgement_gradient(nn.Module):
 
         with torch.no_grad():
             xte = self.x_norm.normalize(xte)
-            mean_y, _ = self.pre_func(self.data_manager, xte, torch.ones(100).reshape(-1,1)*2)  # 预测最高精�?
+            mean_y, _ = self.pre_func(self.data_manager, xte, 2*torch.ones(100).reshape(-1,1)*2)  # 预测最高精�?
             mean_y = self.y_norm.denormalize(mean_y)
         max_mean_y = torch.max(mean_y)
         
@@ -46,7 +44,6 @@ class continuous_fidelity_knowledgement_gradient(nn.Module):
         x1 = self.x_norm.normalize(x)
         self.data_manager.add_data(raw_fidelity_name = '0',fidelity_index= 0 , x=x1, y=y)
 
-        # self.model_objective_new.train(xtr_new, ytr_new, s_index_new)
         print('train new GP model')
         kernel_init = kernel.SquaredExponentialKernel(length_scale=1., signal_variance=1.)
         if self.model_name == "CMF_CAR":
@@ -64,7 +61,7 @@ class continuous_fidelity_knowledgement_gradient(nn.Module):
         
         with torch.no_grad():
             xte = self.x_norm.normalize(xte)
-            mu, _ = GP_new.forward(self.data_manager, xte, torch.ones(100).reshape(-1,1)*2)  # tensor
+            mu, _ = GP_new.forward(self.data_manager, xte, 2*torch.ones(100).reshape(-1,1)*2)  # tensor
             mu = self.y_norm.denormalize(mu)
         
         self.data_manager.data_dict['0']['X'] = self.data_manager.data_dict['0']['X'][:-1]
@@ -87,8 +84,6 @@ class continuous_fidelity_knowledgement_gradient(nn.Module):
         torch.manual_seed(self.seed + 86 + 37)
         ts = torch.rand(N, 1) * (self.search_range[-1][1] - self.search_range[-1][0]) + self.search_range[-1][0]
 
-        # new_x = tt[0, :].reshape(1, tt.shape[1])
-        # new_s = ts[0, :].reshape(1, 1)
         max_cfkg = float("-inf")
         for i in range(N):
             cfkg = self.negative_cfkg(tt[i].reshape(1, tt.shape[1]), ts[i].reshape(1, 1))

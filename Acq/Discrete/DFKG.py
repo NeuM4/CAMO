@@ -3,9 +3,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..')))
 from FidelityFusion_Models import *
-from FidelityFusion_Models.GP_DMF import *
-MF_model_list = {'CMF_CAR': ContinuousAutoRegression_large, 'CMF_CAR_dkl': CMF_CAR_dkl, "GP": cigp,
-                 'ResGP': ResGP, 'AR': AR}
+from GaussianProcess import kernel
+
+MF_model_list = {'CMF_CAR': ContinuousAutoRegression_large, 'CMF_CAR_dkl': CMF_CAR_dkl, "GP": cigp, 'ResGP': ResGP, 'AR': AR}
 
 class discrete_fidelity_knowledgement_gradient(torch.nn.Module):
     def __init__(self, fidelity_num, posterior_function, cost, data_model, data_manager, model_name, xdim, 

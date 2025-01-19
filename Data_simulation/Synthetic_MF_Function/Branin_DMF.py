@@ -4,9 +4,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..
 import torch
 import math
 
-from Data_simulation.Cost_Function.cost_pow_10 import cost_discrete as cost_pow_10
-from Data_simulation.Cost_Function.cost_linear import cost_discrete as cost_linear
-from Data_simulation.Cost_Function.cost_log import cost_discrete as cost_log
+from Data_simulation.Cost_Function import *
 cost_list = {'pow_10': cost_pow_10,'linear': cost_linear, 'log': cost_log}
 
 class Branin_DMF:
@@ -70,8 +68,10 @@ class Branin_DMF:
         return xtr, ytr
     
     def find_max_value_in_range(self):
+        torch.manual_seed(1)
         
         # Generate random points within the search range
+        # In the past, when using 1000, a larger value should be taken to ensure accuracy
         num_points = 1000
         
         x_samples = torch.rand(num_points, self.x_dim) * (self.search_range[-1][1] - self.search_range[-1][0]) + self.search_range[-1][0]

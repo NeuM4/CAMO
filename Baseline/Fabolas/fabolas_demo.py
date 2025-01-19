@@ -28,7 +28,7 @@ from robo.util.incumbent_estimation import projected_incumbent_estimation
 
 def fabolas(exp_config):
     data_name = exp_config["data_name"]
-    path_csv = sys.path[-1] + '/ICLR_exp/CMF/Exp_results/'+exp_config['Exp_marker']+'/' + data_name + '/' + exp_config['cost_type'] + '/'
+    path_csv = sys.path[-1] + '/Experiment/CMF/Exp_results/'+exp_config['Exp_marker']+'/' + data_name + '/' + exp_config['cost_type'] + '/'
     seed = exp_config["seed"]
     data_model = exp_config["data_model"]
     initial_index = exp_config['initial_num']
@@ -320,7 +320,7 @@ def fabolas(exp_config):
 
 if __name__ == '__main__':
     Data_list = {'non_linear_sin': non_linear_sin, 'forrester': forrester, 'Park': Park, 'Branin': Branin, 
-                 'Currin': Currin, 'borehole':borehole,'booth':booth,"bohachevsky":bohachevsky,
+                 'Currin': Currin, 'borehole':borehole,"bohachevsky":bohachevsky,
                  'himmelblau':himmelblau,'colvile':colvile
                 #  'HeatedBlock': HeatedBlock,'VibratePlate': VibPlate
                  }
@@ -331,14 +331,12 @@ if __name__ == '__main__':
     Exp_marker = "Norm_res_fabolas_log"
     data_name = args.data_name
     
-    seed_dic ={'Currin':[2,3,4,6,8,9,11,12,13,16,17,18,19,20,21,22,23,24,25,26,27,28],'Branin':[0,2,3,4,5,7,8,10,11,13,14,15,16,17,18,19,20,21,22,24,25,27,29],'Park':[0,1,2,3,4,5,6,7,8,9,11,14,16,20,21,22,23,24,25,28,29],
-           'non_linear_sin':[1,5,6,7,11,14,16,17,18,19,20,21,22,24,25,26,27,29],'forrester':[1,2,4,5,7,8,9,11,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29],
-           'bohachevsky':[0,1,2,3,4,7,8,9,10,11,12,15,17,19,21,22,24,26,27],'himmelblau':[14,15,16,17,18,19,20,22,23,24,25,26,27,28],
-           'borehole':[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29],
-           'colvile':[14,15,19,20,21,22,24,25,29]}
+    seed_dic ={'Currin':[i for i in range(20)],'Branin':[i for i in range(20)],'Park':[i for i in range(20)],
+           'non_linear_sin':[i for i in range(20)],'forrester':[i for i in range(20)],'bohachevsky':[i for i in range(20)],'himmelblau':[i for i in range(20)],
+           'borehole':[i for i in range(20)],'colvile':[i for i in range(20)]}
     
     # Set up logging
-    log_file_path = os.path.join(sys.path[-1], 'ICLR_exp', 'CMF', 'Exp_results', Exp_marker, data_name, args.cost_type, 'fabolas.log')
+    log_file_path = os.path.join(sys.path[-1], 'Experiment', 'CMF', 'Exp_results', data_name, args.cost_type, 'fabolas.log')
     log_dir = os.path.dirname(log_file_path)
 
     if not os.path.exists(log_dir):

@@ -11,7 +11,7 @@ The performance of CAMO in terms of simple regret on the Borehole, Colville, and
 project_root/
 ├── README.md
 ├── requirements.txt
-├── Acq (acquisition function)
+├── Acquisition_function
 ├── assert (some figure and data)
 ├── Baseline (fabolas and smac) 
 ├── Data_simulation (cost function and synthetic mf function)
@@ -39,7 +39,7 @@ python CMF_norm.py -- "data_name" --cost_type "pow_10"
 
 We provide graphic code
 ```
-python Graph_for_cmf_norm.py
+python Graph_for_hdimdata.py
 ```
 
 ## Perform CAMO in real world simulation

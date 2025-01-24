@@ -129,7 +129,7 @@ def MF_BO_continues(exp_config):
                 rmse = torch.sqrt(torch.tensor(mean_squared_error(y_gt.reshape(-1,1), mu.detach())))
                 r2 = r2_score(y_gt.reshape(-1,1), mu.detach())
                 recording["IR"].append((data_max - max(mu)).item())
-                recording['r2'].append(r2.item())
+                recording['r2'].append(r2)
                 recording['rmse'].append(rmse.item())
                 recording["operation_time"].append(0)   
                 
@@ -203,7 +203,7 @@ def MF_BO_continues(exp_config):
             rmse = torch.sqrt(torch.tensor(mean_squared_error(y_gt.reshape(-1,1), mu.detach())))
             r2 = r2_score(y_gt.reshape(-1,1), mu.detach())
             recording["IR"].append((data_max - max(mu)).item())
-            recording['r2'].append(r2.item())
+            recording['r2'].append(r2)
             recording['rmse'].append(rmse.item())
             recording["operation_time"].append(T2 - T1)
             i += 1

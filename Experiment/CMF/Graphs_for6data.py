@@ -99,7 +99,7 @@ seed_dic ={
            'Park':[i for i in range(20)],
            'non_linear_sin':[i for i in range(20)],
            'forrester':[i for i in range(20)],
-           'bohachevsky':[i for i in range(20)]}
+           'bohachevsky':[i for i in range(18)]}
 
 cmf_methods_name_list = [  
                         'GP_UCB','GP_cfKG',

@@ -27,7 +27,7 @@ Dic = {
     'CMF_CAR_dkl_cfKG': ['#BA55D3', "^", "CAMO-DKL-cfKG", 'dashed'],  # 淡紫色 + 上三角形
 }
 
-max_dic = { 'himmelblau':303.5,'bohachevsky':72.15,'borehole': 244 }
+max_dic = { 'himmelblau':303.5,'colvile':609.26,'borehole': 244 }
 #The overall deviation caused by code issues during the initial estimation of the maximum value
 add_dic = {'colvile': 125, 'himmelblau': 1,'borehole':4} 
 lim_x = {'borehole':[48,300],'colvile': [48, 300], 'himmelblau': [48, 300]}

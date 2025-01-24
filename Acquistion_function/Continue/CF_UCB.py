@@ -13,9 +13,9 @@ class upper_confidence_bound_continuous(nn.Module):
         self.pre_func = posterior_function
         self.model_cost = model_cost
         self.x_dimension = x_dimension
-        self.data_manager = data_manager
-        self.log_length_scale = nn.Parameter(torch.zeros(x_dimension))    # ARD length scale
-        self.log_scale = nn.Parameter(torch.zeros(1))   # kernel scale
+        self.data_manager = data_manager  
+        self.log_length_scale = torch.zeros(x_dimension) # ARD length scale
+        self.log_scale = torch.zeros(1) # kernel scale
         self.x_norm = norm[0]
         self.y_norm = norm[1]
         
@@ -55,6 +55,7 @@ class upper_confidence_bound_continuous(nn.Module):
         return gamma_z
 
     def negative_ucb(self):
+        #for camo fidelity start from 1 is better
         x_in = torch.cat((self.x, torch.ones(1).reshape(-1, 1)*(self.search_range[-1][-1]+1)), dim=1)
         x_in1 = self.x_norm.normalize(x_in)
         mean, var = self.pre_func(self.data_manager, x_in1)
@@ -94,6 +95,7 @@ class upper_confidence_bound_continuous(nn.Module):
         tau_z_std = []
         for z in self.z_range:
             z = z.reshape(-1, 1)
+            #for camo fidelity start from 1 is better
             x_te = torch.cat((new_x, z+1), dim=1)
             x_te = self.x_norm.normalize(x_te)
             m, v = self.pre_func(self.data_manager, x_te)

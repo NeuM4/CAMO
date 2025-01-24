@@ -9,13 +9,13 @@ from FidelityFusion_Models import *
 from Data_simulation.Synthetic_MF_Function import *
 import GaussianProcess.kernel as kernel
 from GaussianProcess.cigp_v10 import *
-from Acq.Discrete import *
+from Acquistion_function.Discrete import *
 from sklearn.metrics import mean_squared_error, r2_score
 from FidelityFusion_Models.MF_data import min_max_normalizer_2
 import argparse
 import random
 
-MF_model_list = {'ResGP': ResGP, 'AR': AR, 'GP': cigp,}
+MF_model_list = {'ResGP': ResGP, 'AR': AR, 'GP': cigp}
 Acq_list = {'UCB': DMF_UCB, 'EI': DMF_EI, 'cfKG': DMF_KG}
 Data_list = {'Currin':Currin,'Branin': Branin}
 
